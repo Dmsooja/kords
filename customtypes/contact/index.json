@@ -1,0 +1,9 @@
+{
+  "id": "contact",
+  "label": "Contact",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {}
+  }
+}

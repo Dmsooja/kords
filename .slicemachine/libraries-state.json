@@ -1,0 +1,78 @@
+{
+  "slices": {
+    "components": {
+      "hero_section_card": {
+        "library": "slices",
+        "id": "hero_section_card",
+        "name": "HeroSectionCard",
+        "description": "HeroSectionCard",
+        "model": {
+          "id": "hero_section_card",
+          "type": "SharedSlice",
+          "name": "HeroSectionCard",
+          "description": "HeroSectionCard",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "HeroSectionCard",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Grain",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "In irure dolor sunt nulla duis minim adipisicing aliquip. Consequat laborum fugiat consectetur consectetur sint nulla laborum do.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "hero_section_card"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      }
+    }
+  }
+}
