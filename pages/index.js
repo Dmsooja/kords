@@ -1,5 +1,5 @@
 import { SliceZone } from "@prismicio/react";
-// import { Layout } from "../components/Layout";
+import { Layout } from "../components/Layout";
 import { createClient } from '../prismicio';
 import { components } from '../slices/index';
 // import { menuGraphQuery, blogArticlesGraphQuery } from "../queries";
@@ -16,8 +16,9 @@ const __allComponents = { ...components }
   return (
     <div>
       {/* <Layout menu={menu} footer={footer} altLangs={doc.alternate_languages}> */}
+      <Layout altLangs={doc.alternate_languages}>
         <SliceZone slices={doc.data.slices} components={__allComponents} />
-      {/* </Layout> */}
+      </Layout>
     </div>
   )
 }
@@ -26,7 +27,7 @@ export async function getStaticProps({ previewData, locale }) {
   const client = createClient(previewData)
 
   // const document = (await client.getSingle('homepage', { graphQuery: blogArticlesGraphQuery, lang: locale }).catch(e => {
-  const document = (await client.getSingle('homepage').catch(e => {
+  const document = (await client.getSingle('homepage', { lang: locale }).catch(e => {
       return null;
   }));
   

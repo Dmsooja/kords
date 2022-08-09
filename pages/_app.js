@@ -9,8 +9,8 @@ function App({ Component, pageProps }) {
   return (
     <PrismicProvider
       linkResolver={linkResolver}
-      internalLinkComponent={({ href, ...props }) => (
-        <Link href={href}>
+      internalLinkComponent={({ href, locale, ...props }) => (
+        <Link href={href} locale={locale}>
           <a {...props} />
         </Link>
       )}

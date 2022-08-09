@@ -18,7 +18,7 @@ export function linkResolver(doc) {
   switch (doc.type) {
     case 'homepage':
       // return `/${doc.lang}`
-      return `/${doc}`
+      return `/${doc.lang}`
     case 'blog':
       return `/${doc.lang}/blog`
     case 'blog-article':
