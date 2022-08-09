@@ -1,0 +1,9 @@
+{
+  "id": "menu_main",
+  "label": "Menu Main",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {}
+  }
+}

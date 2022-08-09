@@ -17,9 +17,18 @@ export const repositoryName = prismic.getRepositoryName(sm.apiEndpoint)
 export function linkResolver(doc) {
   switch (doc.type) {
     case 'homepage':
-      return '/'
-    case 'page':
-      return `/${doc.uid}`
+      // return `/${doc.lang}`
+      return `/${doc}`
+    case 'blog':
+      return `/${doc.lang}/blog`
+    case 'blog-article':
+      return `/${doc.lang}/blog/${doc.uid}`
+    case 'about':
+      return `/${doc.lang}/about`
+    case 'contact':
+      return `/${doc.lang}/contact`
+    case 'products':
+      return `/${doc.lang}/products`
     default:
       return null
   }

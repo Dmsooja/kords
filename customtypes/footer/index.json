@@ -1,0 +1,9 @@
+{
+  "id": "footer",
+  "label": "Footer",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {}
+  }
+}
