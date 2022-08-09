@@ -2,9 +2,33 @@
   "_cts": {
     "homepage": {},
     "blog": {},
-    "contact": {}
+    "contact": {},
+    "blog_article": {},
+    "menu_main": {},
+    "footer": {}
   },
   "slices": {
-    "HeroSectionCard": {}
+    "HeroSectionCard": {
+      "default": {
+        "items": {
+          "button_text": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        },
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "ScrollingCards": {},
+    "Text": {}
   }
 }

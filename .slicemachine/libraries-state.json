@@ -22,6 +22,122 @@
                 "title": {
                   "type": "StructuredText",
                   "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                }
+              },
+              "items": {
+                "button_type": {
+                  "type": "Select",
+                  "config": {
+                    "label": "Button Type",
+                    "placeholder": "",
+                    "options": [
+                      "primary",
+                      "secondary"
+                    ],
+                    "default_value": "primary"
+                  }
+                },
+                "button_link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Button Link",
+                    "placeholder": "",
+                    "select": null
+                  }
+                },
+                "button_text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Button Text",
+                    "placeholder": "Get started",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "button_type": "primary",
+                "button_link": {
+                  "link_type": "Web",
+                  "url": "https://prismic.io"
+                },
+                "button_text": [
+                  {
+                    "type": "paragraph",
+                    "text": "Occaecat ea nulla minim nostrud incididunt. Aute pariatur Lorem velit do minim nulla nostrud consectetur consectetur sint irure Lorem.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Advice",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Est ex proident qui consequat deserunt laboris ullamco tempor. Ipsum eiusmod consequat ut aute aliquip eu ut adipisicing proident. Culpa adipisicing ipsum veniam.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "hero_section_card"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "scrolling_cards": {
+        "library": "slices",
+        "id": "scrolling_cards",
+        "name": "ScrollingCards",
+        "description": "ScrollingCards",
+        "model": {
+          "id": "scrolling_cards",
+          "type": "SharedSlice",
+          "name": "ScrollingCards",
+          "description": "ScrollingCards",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ScrollingCards",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
                     "single": "heading1",
                     "label": "Title",
                     "placeholder": "This is where it all begins..."
@@ -52,19 +168,91 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Grain",
+                  "text": "Minerals",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "In irure dolor sunt nulla duis minim adipisicing aliquip. Consequat laborum fugiat consectetur consectetur sint nulla laborum do.",
+                  "text": "Veniam laboris Lorem ad non magna exercitation mollit dolor in. Laborum est Lorem incididunt proident adipisicing et consectetur proident eu occaecat ea irure voluptate culpa enim. Labore deserunt Lorem minim et nisi irure minim incididunt commodo deserunt culpa amet.",
                   "spans": []
                 }
               ]
             },
-            "slice_type": "hero_section_card"
+            "slice_type": "scrolling_cards"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "text": {
+        "library": "slices",
+        "id": "text",
+        "name": "Text",
+        "description": "Text",
+        "model": {
+          "id": "text",
+          "type": "SharedSlice",
+          "name": "Text",
+          "description": "Text",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Text",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Empty",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Lorem velit sint eu sit adipisicing veniam quis ullamco nulla. Exercitation quis culpa voluptate nulla ullamco laboris.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "text"
           }
         },
         "meta": {
