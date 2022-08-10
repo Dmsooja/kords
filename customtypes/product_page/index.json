@@ -1,0 +1,9 @@
+{
+  "id": "product_page",
+  "label": "Product Page",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {}
+  }
+}

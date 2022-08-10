@@ -1,7 +1,7 @@
 {
   "id": "footer",
   "label": "Footer",
-  "repeatable": true,
+  "repeatable": false,
   "status": true,
   "json": {
     "Main": {}

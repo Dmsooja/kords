@@ -1,0 +1,9 @@
+{
+  "id": "product_category",
+  "label": "Product Category",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {}
+  }
+}
