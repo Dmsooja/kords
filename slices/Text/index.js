@@ -1,17 +1,13 @@
 import React from 'react';
 import * as prismicH from '@prismicio/helpers';
-import { PrismicRichText } from '@prismicio/react';
+import { PrismicRichText, PrismicLink } from '@prismicio/react';
 
 const Text = ({ slice }) => (
-  <section>
-    <div className="leading-relaxed md:text-xl md:leading-relaxed">
-      {prismicH.isFilled.richText(slice.primary.text) ?
-        <PrismicRichText field={slice.primary.text} />
-        : <p>Content is missing</p>
-      }
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-3xl mx-auto">
+    <PrismicRichText field={slice.primary.text} />
     </div>
-
-  </section>
+  </div>
 )
 
 export default Text

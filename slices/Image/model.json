@@ -1,23 +1,31 @@
 {
-  "id": "text",
+  "id": "image",
   "type": "SharedSlice",
-  "name": "Text",
-  "description": "Text",
+  "name": "Image",
+  "description": "Image",
   "variations": [
     {
       "id": "default",
       "name": "Default",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Text",
+      "description": "Image",
       "primary": {
-        "text": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "caption": {
           "type": "StructuredText",
           "config": {
-            "label": "Text",
-            "placeholder": "A nice description of your feature",
+            "label": "Caption",
+            "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+            "single": "paragraph,strong"
           }
         }
       },

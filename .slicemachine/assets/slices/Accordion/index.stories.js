@@ -1,0 +1,9 @@
+import MyComponent from '../../../../slices/Accordion';
+
+export default {
+  title: 'slices/Accordion'
+}
+
+
+export const _Default = () => <MyComponent slice={{"variation":"default","version":"sktwi1xtmkfgx8626","items":[{"title":[{"type":"paragraph","text":"Incididunt deserunt amet sit ea anim elit et minim laboris consectetur Lorem. Et irure id velit. Minim ut ex cillum proident officia ullamco velit incididunt non ex reprehenderit quis elit tempor est.","spans":[]}],"content":[{"type":"paragraph","text":"Aute consequat aliqua ad sint anim ad ipsum dolore ea id et minim.","spans":[]}]}],"primary":{"title":[{"type":"heading2","text":"Indicate","spans":[]}]},"slice_type":"accordion","id":"_Default"}} />
+_Default.storyName = ''

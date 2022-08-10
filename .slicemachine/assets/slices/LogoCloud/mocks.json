@@ -6,19 +6,21 @@
       {}
     ],
     "primary": {
-      "text": [
+      "title": [
         {
           "type": "heading1",
-          "text": "Discovery",
+          "text": "Title",
           "spans": []
-        },
+        }
+      ],
+      "description": [
         {
           "type": "paragraph",
-          "text": "Irure ad quis minim aute aute veniam sit sint enim dolor sint eu. Occaecat id consectetur cillum esse commodo quis do eiusmod.",
+          "text": "Proident eu consequat Lorem pariatur in cupidatat minim veniam officia deserunt incididunt aliquip sit exercitation.",
           "spans": []
         }
       ]
     },
-    "slice_type": "text"
+    "slice_type": "logo_cloud"
   }
 ]

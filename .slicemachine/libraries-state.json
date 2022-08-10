@@ -1,6 +1,351 @@
 {
   "slices": {
     "components": {
+      "accordion": {
+        "library": "slices",
+        "id": "accordion",
+        "name": "Accordion",
+        "description": "Accordion",
+        "model": {
+          "id": "accordion",
+          "type": "SharedSlice",
+          "name": "Accordion",
+          "description": "Accordion",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Accordion",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                }
+              },
+              "items": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "content": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Content",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Incididunt deserunt amet sit ea anim elit et minim laboris consectetur Lorem. Et irure id velit. Minim ut ex cillum proident officia ullamco velit incididunt non ex reprehenderit quis elit tempor est.",
+                    "spans": []
+                  }
+                ],
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Aute consequat aliqua ad sint anim ad ipsum dolore ea id et minim.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Indicate",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "accordion"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/Accordion/default/preview.png",
+            "width": 800,
+            "height": 246
+          }
+        }
+      },
+      "featured_articles": {
+        "library": "slices",
+        "id": "featured_articles",
+        "name": "FeaturedArticles",
+        "description": "FeaturedArticles",
+        "model": {
+          "id": "featured_articles",
+          "type": "SharedSlice",
+          "name": "FeaturedArticles",
+          "description": "FeaturedArticles",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "FeaturedArticles",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "From the Blog",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph"
+                  }
+                }
+              },
+              "items": {
+                "featured_image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Featured Image",
+                    "constraint": {
+                      "width": 398,
+                      "height": 192
+                    },
+                    "thumbnails": []
+                  }
+                },
+                "category_name": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Category Name",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,strong"
+                  }
+                },
+                "category_link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Category Link",
+                    "placeholder": "",
+                    "select": null
+                  }
+                },
+                "article_link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Article Link",
+                    "placeholder": "",
+                    "select": null
+                  }
+                },
+                "article_title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Article Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,strong,hyperlink"
+                  }
+                },
+                "article_excerpt": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Article Excerpt",
+                    "placeholder": "Excerpt here",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,strong,em"
+                  }
+                },
+                "article_author_link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Article Author Link",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "select": null
+                  }
+                },
+                "article_author_name": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Article Author Name",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "article_author_image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Article Author Image",
+                    "constraint": {
+                      "width": 40,
+                      "height": 40
+                    },
+                    "thumbnails": []
+                  }
+                },
+                "article_reading_time": {
+                  "type": "Number",
+                  "config": {
+                    "label": "Article Reading Time",
+                    "placeholder": ""
+                  }
+                },
+                "article_publishing_date": {
+                  "type": "Date",
+                  "config": {
+                    "label": "Article Publishing Date",
+                    "placeholder": ""
+                  }
+                },
+                "article_update_timestamp": {
+                  "type": "Timestamp",
+                  "config": {
+                    "label": "Article Update Timestamp",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "featured_image": {
+                  "dimensions": {
+                    "width": 398,
+                    "height": 192
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa"
+                },
+                "category_name": [
+                  {
+                    "type": "paragraph",
+                    "text": "Non est enim deserunt pariatur magna labore. Officia quis elit id nostrud velit commodo qui aute duis officia ex proident.",
+                    "spans": []
+                  }
+                ],
+                "category_link": {
+                  "link_type": "Web",
+                  "url": "https://slicemachine.dev"
+                },
+                "article_link": {
+                  "link_type": "Web",
+                  "url": "https://prismic.io"
+                },
+                "article_title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Occaecat occaecat veniam exercitation. Nostrud fugiat occaecat sunt Lorem reprehenderit quis consectetur occaecat anim. Dolore proident ad veniam consequat duis Lorem aliquip cillum.",
+                    "spans": []
+                  }
+                ],
+                "article_excerpt": [
+                  {
+                    "type": "paragraph",
+                    "text": "Duis commodo cillum irure.",
+                    "spans": []
+                  }
+                ],
+                "article_author_link": {
+                  "link_type": "Web",
+                  "url": "https://slicemachine.dev"
+                },
+                "article_author_name": [
+                  {
+                    "type": "paragraph",
+                    "text": "Minim pariatur excepteur ipsum do. Nostrud nulla pariatur esse excepteur reprehenderit officia consectetur id cupidatat officia. Aliquip est mollit enim ea sit officia nulla cupidatat officia duis ad aute nostrud.",
+                    "spans": []
+                  }
+                ],
+                "article_author_image": {
+                  "dimensions": {
+                    "width": 40,
+                    "height": 40
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef"
+                },
+                "article_reading_time": 3,
+                "article_publishing_date": "2022-08-10",
+                "article_update_timestamp": "2017-11-30T09:18:45+0000"
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Catch",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Id labore do cupidatat ipsum esse est aute et anim. In eu occaecat esse non et laboris ut cillum consequat non.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "featured_articles"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/FeaturedArticles/default/preview.png",
+            "width": 800,
+            "height": 1728
+          }
+        }
+      },
       "hero_section_card": {
         "library": "slices",
         "id": "hero_section_card",
@@ -115,6 +460,165 @@
           "fileName": "index",
           "extension": "js"
         },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/HeroSectionCard/default/preview.png",
+            "width": 800,
+            "height": 510
+          }
+        }
+      },
+      "image": {
+        "library": "slices",
+        "id": "image",
+        "name": "Image",
+        "description": "Image",
+        "model": {
+          "id": "image",
+          "type": "SharedSlice",
+          "name": "Image",
+          "description": "Image",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Image",
+              "primary": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "caption": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Caption",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,strong"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1570393080660-de4e4a15a247"
+              },
+              "caption": [
+                {
+                  "type": "paragraph",
+                  "text": "Ad dolore officia fugiat dolore incididunt. Quis labore aliquip culpa laborum magna anim occaecat non commodo. Eiusmod labore sit laboris enim proident dolore ullamco ex fugiat ut excepteur veniam voluptate nostrud anim.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "image"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/Image/default/preview.png",
+            "width": 800,
+            "height": 628
+          }
+        }
+      },
+      "logo_cloud": {
+        "library": "slices",
+        "id": "logo_cloud",
+        "name": "LogoCloud",
+        "description": "LogoCloud",
+        "model": {
+          "id": "logo_cloud",
+          "type": "SharedSlice",
+          "name": "LogoCloud",
+          "description": "LogoCloud",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "LogoCloud",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Title",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Proident eu consequat Lorem pariatur in cupidatat minim veniam officia deserunt incididunt aliquip sit exercitation.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "logo_cloud"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
         "screenshotPaths": {}
       },
       "scrolling_cards": {
@@ -138,21 +642,60 @@
                 "title": {
                   "type": "StructuredText",
                   "config": {
-                    "single": "heading1",
                     "label": "Title",
-                    "placeholder": "This is where it all begins..."
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
                   }
                 },
-                "description": {
+                "sectionLinkLabel": {
                   "type": "StructuredText",
                   "config": {
-                    "single": "paragraph",
-                    "label": "Description",
-                    "placeholder": "A nice description of your feature"
+                    "label": "Section Link Label",
+                    "placeholder": "Browse all",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                },
+                "section_link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Section Link",
+                    "placeholder": "",
+                    "select": null
                   }
                 }
               },
-              "items": {},
+              "items": {
+                "card_image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Card Image",
+                    "constraint": {
+                      "width": 440,
+                      "height": 640
+                    },
+                    "thumbnails": []
+                  }
+                },
+                "card_label": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Card Label",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "card_link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Card Link",
+                    "placeholder": "",
+                    "select": null
+                  }
+                }
+              },
               "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
           ]
@@ -162,23 +705,48 @@
             "variation": "default",
             "version": "sktwi1xtmkfgx8626",
             "items": [
-              {}
+              {
+                "card_image": {
+                  "dimensions": {
+                    "width": 440,
+                    "height": 640
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1521206698660-5e077ff6f9c8"
+                },
+                "card_label": [
+                  {
+                    "type": "paragraph",
+                    "text": "Dolor cillum officia pariatur exercitation proident in proident laboris aliquip ad laboris aliquip reprehenderit ullamco.",
+                    "spans": []
+                  }
+                ],
+                "card_link": {
+                  "link_type": "Web",
+                  "url": "http://google.com"
+                }
+              }
             ],
             "primary": {
               "title": [
                 {
-                  "type": "heading1",
-                  "text": "Minerals",
+                  "type": "heading2",
+                  "text": "Audience",
                   "spans": []
                 }
               ],
-              "description": [
+              "sectionLinkLabel": [
                 {
                   "type": "paragraph",
-                  "text": "Veniam laboris Lorem ad non magna exercitation mollit dolor in. Laborum est Lorem incididunt proident adipisicing et consectetur proident eu occaecat ea irure voluptate culpa enim. Labore deserunt Lorem minim et nisi irure minim incididunt commodo deserunt culpa amet.",
+                  "text": "Anim est voluptate do deserunt ullamco est irure et sint. Culpa ullamco ex consequat deserunt anim non. Reprehenderit non irure enim est nulla quis nulla.",
                   "spans": []
                 }
-              ]
+              ],
+              "section_link": {
+                "link_type": "Web",
+                "url": "http://twitter.com"
+              }
             },
             "slice_type": "scrolling_cards"
           }
@@ -187,7 +755,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/ScrollingCards/default/preview.png",
+            "width": 800,
+            "height": 560
+          }
+        }
       },
       "text": {
         "library": "slices",
@@ -207,20 +781,13 @@
               "version": "sktwi1xtmkfgx8626",
               "description": "Text",
               "primary": {
-                "title": {
+                "text": {
                   "type": "StructuredText",
                   "config": {
-                    "single": "heading1",
-                    "label": "Title",
-                    "placeholder": "This is where it all begins..."
-                  }
-                },
-                "description": {
-                  "type": "StructuredText",
-                  "config": {
-                    "single": "paragraph",
-                    "label": "Description",
-                    "placeholder": "A nice description of your feature"
+                    "label": "Text",
+                    "placeholder": "A nice description of your feature",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
                   }
                 }
               },
@@ -237,17 +804,15 @@
               {}
             ],
             "primary": {
-              "title": [
+              "text": [
                 {
                   "type": "heading1",
-                  "text": "Empty",
+                  "text": "Discovery",
                   "spans": []
-                }
-              ],
-              "description": [
+                },
                 {
                   "type": "paragraph",
-                  "text": "Lorem velit sint eu sit adipisicing veniam quis ullamco nulla. Exercitation quis culpa voluptate nulla ullamco laboris.",
+                  "text": "Irure ad quis minim aute aute veniam sit sint enim dolor sint eu. Occaecat id consectetur cillum esse commodo quis do eiusmod.",
                   "spans": []
                 }
               ]
@@ -259,7 +824,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/Text/default/preview.png",
+            "width": 800,
+            "height": 720
+          }
+        }
       }
     }
   }

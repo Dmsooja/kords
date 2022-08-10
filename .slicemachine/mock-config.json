@@ -5,7 +5,9 @@
     "contact": {},
     "blog_article": {},
     "menu_main": {},
-    "footer": {}
+    "footer": {},
+    "category": {},
+    "product_page": {}
   },
   "slices": {
     "HeroSectionCard": {
@@ -28,7 +30,116 @@
         }
       }
     },
-    "ScrollingCards": {},
-    "Text": {}
+    "ScrollingCards": {
+      "default": {
+        "primary": {
+          "sectionLinkLabel": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {
+          "card_image": {
+            "content": "https://images.unsplash.com/photo-1521206698660-5e077ff6f9c8"
+          }
+        }
+      }
+    },
+    "Text": {
+      "default": {
+        "primary": {
+          "text": {
+            "config": {
+              "patternType": "STORY",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Image": {
+      "default": {
+        "primary": {
+          "caption": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "image": {
+            "content": "https://images.unsplash.com/photo-1570393080660-de4e4a15a247"
+          }
+        }
+      }
+    },
+    "Faq": {},
+    "Accordion": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "FeaturedArticles": {
+      "default": {
+        "items": {
+          "category_name": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "article_reading_time": {
+            "content": 3
+          },
+          "article_publishing_date": {
+            "content": "2022-08-10"
+          },
+          "article_title": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "article_excerpt": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "article_author_image": {
+            "content": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef"
+          }
+        },
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "LogoCloud": {}
   }
 }
