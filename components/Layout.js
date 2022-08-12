@@ -12,7 +12,6 @@ export const Layout = ({ children, menu, footer, altLangs }) => {
         <Header menu={menu} altLangs={altLangs} />
         : null
       }
-      <Header altLangs={altLangs} />
       <main>
         {children}
         </main>

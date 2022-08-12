@@ -10,5 +10,16 @@
   "linked_documents": [],
   "lang": "en-us",
   "alternate_languages": [],
-  "data": {}
+  "data": {
+    "logo": {
+      "dimensions": {
+        "width": 900,
+        "height": 40
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa"
+    },
+    "slices": []
+  }
 }

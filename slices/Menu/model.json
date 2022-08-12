@@ -1,0 +1,74 @@
+{
+  "id": "menu",
+  "type": "SharedSlice",
+  "name": "Menu",
+  "description": "Menu",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Menu",
+      "primary": {
+        "linkLabel": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Link Label",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "dropdownMenu",
+      "name": "Dropdown Menu",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Menu",
+      "primary": {
+        "dropdownLevel1Label": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Dropdown Level 1 Label",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        }
+      },
+      "items": {
+        "dropdown_level_2_label": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Dropdown Level 2 Label",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "dropdown_level_2_link": {
+          "type": "Link",
+          "config": {
+            "label": "Dropdown Level 2 Link",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

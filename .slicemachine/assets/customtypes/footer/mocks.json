@@ -10,5 +10,45 @@
   "linked_documents": [],
   "lang": "en-us",
   "alternate_languages": [],
-  "data": {}
+  "data": {
+    "internalLinks": [
+      {
+        "link_label": [
+          {
+            "type": "paragraph",
+            "text": "Amet sunt reprehenderit consequat.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      }
+    ],
+    "social_links": [
+      {
+        "social_link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "social_icon": {
+          "dimensions": {
+            "width": 24,
+            "height": 24
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88"
+        }
+      }
+    ],
+    "copyright": [
+      {
+        "type": "paragraph",
+        "text": "Non cillum ad do ad. Ad ut tempor nisi dolor occaecat nulla nisi exercitation. Ipsum cillum adipisicing mollit non elit.",
+        "spans": []
+      }
+    ]
+  }
 }
