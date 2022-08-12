@@ -19,6 +19,18 @@
           "choices": {
             "hero_section_card": {
               "type": "SharedSlice"
+            },
+            "accordion": {
+              "type": "SharedSlice"
+            },
+            "featured_articles": {
+              "type": "SharedSlice"
+            },
+            "scrolling_cards": {
+              "type": "SharedSlice"
+            },
+            "logo_cloud": {
+              "type": "SharedSlice"
             }
           }
         }

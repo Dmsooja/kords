@@ -10,5 +10,17 @@
   "linked_documents": [],
   "lang": "en-us",
   "alternate_languages": [],
-  "data": {}
+  "data": {
+    "article_category": "Tests",
+    "featured_image": {
+      "dimensions": {
+        "width": 1920,
+        "height": 350
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e"
+    },
+    "slices": []
+  }
 }

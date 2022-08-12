@@ -2,28 +2,34 @@
 
 import Accordion from './Accordion';
 import FeaturedArticles from './FeaturedArticles';
+import HeaderBanner from './HeaderBanner';
 import HeroSectionCard from './HeroSectionCard';
 import Image from './Image';
-import LogoCloud from './LogoCloud';
+import Menu from './Menu';
 import ScrollingCards from './ScrollingCards';
 import Text from './Text';
+import TopPromotionBanner from './TopPromotionBanner';
 
 export {
 	Accordion,
 	FeaturedArticles,
+	HeaderBanner,
 	HeroSectionCard,
 	Image,
-	LogoCloud,
+	Menu,
 	ScrollingCards,
 	Text,
+	TopPromotionBanner,
 };
 
 export const components = {
 	accordion: Accordion,
 	featured_articles: FeaturedArticles,
+	logo_cloud: HeaderBanner,
 	hero_section_card: HeroSectionCard,
 	image: Image,
-	logo_cloud: LogoCloud,
+	menu: Menu,
 	scrolling_cards: ScrollingCards,
 	text: Text,
+	top_promotion_banner: TopPromotionBanner,
 };

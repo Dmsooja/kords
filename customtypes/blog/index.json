@@ -4,6 +4,31 @@
   "repeatable": false,
   "status": true,
   "json": {
-    "Main": {}
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "logo_cloud": {
+              "type": "SharedSlice"
+            },
+            "featured_articles": {
+              "type": "SharedSlice"
+            },
+            "scrolling_cards": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
   }
 }

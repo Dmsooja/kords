@@ -4,6 +4,57 @@
   "repeatable": true,
   "status": true,
   "json": {
-    "Main": {}
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "uid",
+          "placeholder": ""
+        }
+      },
+      "article_category": {
+        "type": "Select",
+        "config": {
+          "label": "Article Category",
+          "placeholder": "",
+          "options": [
+            "Guides",
+            "Tests",
+            "How to"
+          ]
+        }
+      },
+      "featured_image": {
+        "type": "Image",
+        "config": {
+          "label": "Featured Image",
+          "constraint": {
+            "height": 350,
+            "width": 1920
+          },
+          "thumbnails": []
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "featured_articles": {
+              "type": "SharedSlice"
+            },
+            "image": {
+              "type": "SharedSlice"
+            },
+            "text": {
+              "type": "SharedSlice"
+            },
+            "scrolling_cards": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
   }
 }

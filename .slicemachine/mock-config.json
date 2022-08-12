@@ -5,7 +5,9 @@
     "contact": {},
     "blog_article": {},
     "menu_main": {},
-    "footer": {},
+    "footer": {
+      "social_links": {}
+    },
     "category": {},
     "product_page": {}
   },
@@ -28,6 +30,9 @@
             }
           }
         }
+      },
+      "heroSectionNoCta": {
+        "items": {}
       }
     },
     "ScrollingCards": {
@@ -138,8 +143,69 @@
             }
           }
         }
+      },
+      "withContentRelationship": {
+        "items": {}
       }
     },
-    "LogoCloud": {}
+    "LogoCloud": {},
+    "TopPromotionBanner": {
+      "default": {
+        "primary": {
+          "message": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "mobile_message": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "HeaderBanner": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Menu": {
+      "default": {
+        "primary": {
+          "linkLabel": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      },
+      "dropdownMenu": {
+        "primary": {
+          "dropdownLevel1Label": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
   }
 }
