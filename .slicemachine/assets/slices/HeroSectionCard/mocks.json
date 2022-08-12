@@ -7,12 +7,12 @@
         "button_type": "primary",
         "button_link": {
           "link_type": "Web",
-          "url": "https://prismic.io"
+          "url": "http://twitter.com"
         },
         "button_text": [
           {
             "type": "paragraph",
-            "text": "Occaecat ea nulla minim nostrud incididunt. Aute pariatur Lorem velit do minim nulla nostrud consectetur consectetur sint irure Lorem.",
+            "text": "Reprehenderit elit minim nulla ex culpa enim do exercitation deserunt incididunt et occaecat deserunt pariatur ut. Nisi qui fugiat commodo. Duis laborum nisi mollit amet irure exercitation aliqua.",
             "spans": []
           }
         ]
@@ -22,14 +22,38 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Advice",
+          "text": "Breathe",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Est ex proident qui consequat deserunt laboris ullamco tempor. Ipsum eiusmod consequat ut aute aliquip eu ut adipisicing proident. Culpa adipisicing ipsum veniam.",
+          "text": "In minim quis incididunt qui irure enim fugiat. Deserunt culpa qui quis aute. Consectetur quis Lorem fugiat labore in minim nisi excepteur cillum proident exercitation occaecat aliquip veniam.",
+          "spans": []
+        }
+      ]
+    },
+    "slice_type": "hero_section_card"
+  },
+  {
+    "variation": "heroSectionNoCta",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Probably",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Labore aliqua adipisicing consectetur Lorem. Nulla officia ipsum exercitation irure esse sunt esse exercitation veniam minim deserunt consectetur. Ea reprehenderit incididunt eu.",
           "spans": []
         }
       ]
