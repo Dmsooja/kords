@@ -1,0 +1,63 @@
+{
+  "id": "top_promotion_banner",
+  "type": "SharedSlice",
+  "name": "TopPromotionBanner",
+  "description": "TopPromotionBanner",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TopPromotionBanner",
+      "primary": {
+        "message": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Message",
+            "placeholder": "We're excited to announce an event",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "mobile_message": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Mobile Message",
+            "placeholder": "Shorter version",
+            "allowTargetBlank": true,
+            "single": "paragraph,em,hyperlink,strong"
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "cta": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Cta",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "close_button_label": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Close Button Label",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}
