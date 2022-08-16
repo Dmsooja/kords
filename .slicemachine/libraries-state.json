@@ -99,6 +99,70 @@
           }
         }
       },
+      "demo_simple_heading": {
+        "library": "slices",
+        "id": "demo_simple_heading",
+        "name": "DemoSimpleHeading",
+        "description": "DemoSimpleHeading",
+        "model": {
+          "id": "demo_simple_heading",
+          "type": "SharedSlice",
+          "name": "DemoSimpleHeading",
+          "description": "DemoSimpleHeading",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "DemoSimpleHeading",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading3"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading3",
+                  "text": "Chest",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "demo_simple_heading"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/DemoSimpleHeading/default/preview.png",
+            "width": 800,
+            "height": 45
+          }
+        }
+      },
       "featured_articles": {
         "library": "slices",
         "id": "featured_articles",
@@ -1142,6 +1206,64 @@
             "height": 560
           }
         }
+      },
+      "simple_heading": {
+        "library": "slices",
+        "id": "simple_heading",
+        "name": "SimpleHeading",
+        "description": "SimpleHeading",
+        "model": {
+          "id": "simple_heading",
+          "type": "SharedSlice",
+          "name": "SimpleHeading",
+          "description": "SimpleHeading",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "SimpleHeading",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading3"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading3",
+                  "text": "Situation",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "simple_heading"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
       },
       "text": {
         "library": "slices",

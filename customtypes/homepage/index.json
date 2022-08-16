@@ -31,6 +31,9 @@
             },
             "logo_cloud": {
               "type": "SharedSlice"
+            },
+            "demo_simple_heading": {
+              "type": "SharedSlice"
             }
           }
         }

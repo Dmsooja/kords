@@ -1,0 +1,19 @@
+[
+  {
+    "variation": "default",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "title": [
+        {
+          "type": "heading3",
+          "text": "Chest",
+          "spans": []
+        }
+      ]
+    },
+    "slice_type": "demo_simple_heading"
+  }
+]
