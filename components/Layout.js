@@ -6,7 +6,7 @@ export const Layout = ({ children, menu, footer, altLangs }) => {
   return (
     <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
       <Head>
-        <title> Kords § Find your music </title>
+        <title> Kords - Find your music </title>
       </Head>
       {menu?.data ?
         <Header menu={menu} altLangs={altLangs} />
