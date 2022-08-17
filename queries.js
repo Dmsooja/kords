@@ -4,8 +4,7 @@ export const blogArticlesGraphQuery =`
 		slices {
 			...on hero_section_card {
 				variation {
-					...on
-					default {
+					...on default {
 						items {
 							...itemsFields
 						}
@@ -17,8 +16,7 @@ export const blogArticlesGraphQuery =`
 			}
 			...on scrolling_cards {
 				variation {
-					...on
-					default {
+					...on default {
 						items {
 							...itemsFields
 						}
@@ -33,18 +31,20 @@ export const blogArticlesGraphQuery =`
 					...on withContentRelationship {
 						items {
 							linked_article {
-								on blog_article {
+								...on blog_article {
 									...blog_articleFields
 								}
 							}
+						}
+						primary {
+							...primaryFields
 						}
 					}
 				}
 			}
 			...on accordion {
 				variation {
-					...on
-					default {
+					...on default {
 						items {
 							...itemsFields
 						}
@@ -54,7 +54,6 @@ export const blogArticlesGraphQuery =`
 					}
 				}
 			}
-
 		}
 	}
 }
