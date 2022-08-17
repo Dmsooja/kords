@@ -1,0 +1,17 @@
+{
+    "id": "{{componentId}}",
+    "type": "SharedSlice",
+    "name": "{{componentName}}",
+    "description": "{{componentName}}",
+    "variations": [
+      {
+        "id": "{{variationId}}",
+        "name": "Default",
+        "docURL": "...",
+        "version": "sktwi1xtmkfgx8626",
+        "description": "{{componentName}}",
+        "primary": {},
+        "items": {}
+      }
+    ]
+  }
