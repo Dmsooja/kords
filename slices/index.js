@@ -8,7 +8,6 @@ import HeroSectionCard from './HeroSectionCard';
 import Image from './Image';
 import Menu from './Menu';
 import ScrollingCards from './ScrollingCards';
-import SimpleHeading from './SimpleHeading';
 import Text from './Text';
 import TopPromotionBanner from './TopPromotionBanner';
 
@@ -21,7 +20,6 @@ export {
 	Image,
 	Menu,
 	ScrollingCards,
-	SimpleHeading,
 	Text,
 	TopPromotionBanner,
 };
@@ -35,7 +33,6 @@ export const components = {
 	image: Image,
 	menu: Menu,
 	scrolling_cards: ScrollingCards,
-	simple_heading: SimpleHeading,
 	text: Text,
 	top_promotion_banner: TopPromotionBanner,
 };
