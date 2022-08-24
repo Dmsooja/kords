@@ -3,7 +3,14 @@
     "homepage": {},
     "blog": {},
     "contact": {},
-    "blog_article": {},
+    "blog_article": {
+      "article_title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    },
     "menu_main": {},
     "footer": {
       "social_links": {}
@@ -206,7 +213,7 @@
           }
         }
       }
-    },  
+    },
     "DemoSimpleHeading": {
       "default": {
         "primary": {

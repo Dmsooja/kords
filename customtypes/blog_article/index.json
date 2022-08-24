@@ -5,6 +5,15 @@
   "status": true,
   "json": {
     "Main": {
+      "article_title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Article Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading2"
+        }
+      },
       "uid": {
         "type": "UID",
         "config": {
@@ -33,6 +42,64 @@
             "width": 1920
           },
           "thumbnails": []
+        }
+      },
+      "article_excerpt": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Article Excerpt",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "article_author_name": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Article Author Name",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "article_author_link": {
+        "type": "Link",
+        "config": {
+          "label": "Article Author Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "article_author_image": {
+        "type": "Image",
+        "config": {
+          "label": "Article Author Image",
+          "constraint": {
+            "width": 40,
+            "height": 40
+          },
+          "thumbnails": []
+        }
+      },
+      "article_reading_time": {
+        "type": "Number",
+        "config": {
+          "label": "Article Reading Time",
+          "placeholder": ""
+        }
+      },
+      "article_publishing_date": {
+        "type": "Date",
+        "config": {
+          "label": "Article Publishing Date",
+          "placeholder": ""
+        }
+      },
+      "article_update_timestamp": {
+        "type": "Timestamp",
+        "config": {
+          "label": "Article Update Timestamp",
+          "placeholder": ""
         }
       },
       "slices": {

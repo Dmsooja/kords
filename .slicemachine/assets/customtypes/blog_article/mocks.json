@@ -11,7 +11,14 @@
   "lang": "en-us",
   "alternate_languages": [],
   "data": {
-    "article_category": "Tests",
+    "article_title": [
+      {
+        "type": "heading2",
+        "text": "Choice",
+        "spans": []
+      }
+    ],
+    "article_category": "How to",
     "featured_image": {
       "dimensions": {
         "width": 1920,
@@ -19,8 +26,38 @@
       },
       "alt": null,
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e"
+      "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04"
     },
+    "article_excerpt": [
+      {
+        "type": "paragraph",
+        "text": "Commodo cupidatat ut enim occaecat ea. Labore quis excepteur dolore sit velit consequat voluptate nisi anim velit ullamco occaecat. Culpa adipisicing occaecat cupidatat duis veniam nostrud sit dolor dolore velit.",
+        "spans": []
+      }
+    ],
+    "article_author_name": [
+      {
+        "type": "paragraph",
+        "text": "Laborum ut quis deserunt sunt labore cillum ea.",
+        "spans": []
+      }
+    ],
+    "article_author_link": {
+      "link_type": "Web",
+      "url": "http://google.com"
+    },
+    "article_author_image": {
+      "dimensions": {
+        "width": 40,
+        "height": 40
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8"
+    },
+    "article_reading_time": 23,
+    "article_publishing_date": "2018-10-30",
+    "article_update_timestamp": "2021-11-23T17:09:58+0000",
     "slices": []
   }
 }

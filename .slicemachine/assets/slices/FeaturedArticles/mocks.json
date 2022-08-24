@@ -11,18 +11,18 @@
           },
           "alt": null,
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+          "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6"
         },
         "category_name": [
           {
             "type": "paragraph",
-            "text": "Nisi ex sit velit enim eu.",
+            "text": "Ex elit ut quis qui voluptate sint anim nostrud voluptate ipsum culpa amet.",
             "spans": []
           }
         ],
         "category_link": {
           "link_type": "Web",
-          "url": "http://twitter.com"
+          "url": "https://prismic.io"
         },
         "article_link": {
           "link_type": "Web",
@@ -31,28 +31,28 @@
         "article_title": [
           {
             "type": "paragraph",
-            "text": "Proident sunt duis eu minim pariatur tempor in velit ea dolore nisi in dolore excepteur. In incididunt aute aliquip occaecat enim officia excepteur nostrud proident culpa id consequat.",
+            "text": "Sint tempor occaecat non cupidatat nulla laborum consequat qui veniam et eu ut et non minim. Incididunt nisi magna ea do id sunt et et. Magna eu cillum consequat tempor labore nulla Lorem culpa occaecat.",
             "spans": []
           }
         ],
         "article_excerpt": [
           {
             "type": "paragraph",
-            "text": "Nisi cupidatat eiusmod esse cillum magna. Aliqua consectetur proident in non in.",
+            "text": "Ex consectetur eu ex ut.",
+            "spans": []
+          }
+        ],
+        "article_author_name": [
+          {
+            "type": "paragraph",
+            "text": "Proident id ullamco reprehenderit magna irure pariatur mollit aute.",
             "spans": []
           }
         ],
         "article_author_link": {
           "link_type": "Web",
-          "url": "https://slicemachine.dev"
+          "url": "http://google.com"
         },
-        "article_author_name": [
-          {
-            "type": "paragraph",
-            "text": "Ut voluptate aliquip nisi ea pariatur pariatur esse officia tempor nisi sunt.",
-            "spans": []
-          }
-        ],
         "article_author_image": {
           "dimensions": {
             "width": 40,
@@ -64,21 +64,21 @@
         },
         "article_reading_time": 3,
         "article_publishing_date": "2022-08-10",
-        "article_update_timestamp": "2018-02-24T00:07:16+0000"
+        "article_update_timestamp": "2012-11-20T19:06:56+0000"
       }
     ],
     "primary": {
       "title": [
         {
           "type": "heading2",
-          "text": "Native",
+          "text": "Clean",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Est ullamco ea sit cillum cupidatat irure mollit commodo in pariatur do sunt eiusmod dolore exercitation. Cillum ullamco aliquip amet aute commodo irure eu laboris excepteur dolore. In excepteur duis anim non mollit nostrud.",
+          "text": "Labore esse amet irure in dolore veniam est cillum irure enim sunt. Excepteur officia in consectetur aliqua ad labore.",
           "spans": []
         }
       ]
@@ -106,14 +106,14 @@
       "title": [
         {
           "type": "heading2",
-          "text": "Clothing",
+          "text": "Television",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Cupidatat in culpa dolor elit aliqua tempor reprehenderit officia labore anim eiusmod aliquip culpa ipsum.",
+          "text": "Cupidatat non Lorem commodo qui quis do anim aliquip.",
           "spans": []
         }
       ]

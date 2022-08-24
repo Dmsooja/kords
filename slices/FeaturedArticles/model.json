@@ -85,15 +85,6 @@
             "multi": "paragraph,strong,em"
           }
         },
-        "article_author_link": {
-          "type": "Link",
-          "config": {
-            "label": "Article Author Link",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "select": null
-          }
-        },
         "article_author_name": {
           "type": "StructuredText",
           "config": {
@@ -101,6 +92,15 @@
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "article_author_link": {
+          "type": "Link",
+          "config": {
+            "label": "Article Author Link",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "select": null
           }
         },
         "article_author_image": {
