@@ -131,8 +131,8 @@
               "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             },
             {
-              "id": "withDescriptionAndCta",
-              "name": "With Description and CTA",
+              "id": "withdescription",
+              "name": "withdescription",
               "docURL": "...",
               "version": "sktwi1xtmkfgx8626",
               "description": "DemoSimpleHeading",
@@ -150,23 +150,6 @@
                   "type": "StructuredText",
                   "config": {
                     "label": "Description",
-                    "placeholder": "",
-                    "allowTargetBlank": true,
-                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-                  }
-                },
-                "button_link": {
-                  "type": "Link",
-                  "config": {
-                    "label": "Button Link",
-                    "placeholder": "",
-                    "select": null
-                  }
-                },
-                "button_text": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Button Text",
                     "placeholder": "",
                     "allowTargetBlank": true,
                     "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
@@ -189,15 +172,15 @@
               "title": [
                 {
                   "type": "heading3",
-                  "text": "Fifth",
+                  "text": "Instrument",
                   "spans": []
                 }
               ]
             },
             "slice_type": "demo_simple_heading"
           },
-          "withDescriptionAndCta": {
-            "variation": "withDescriptionAndCta",
+          "withdescription": {
+            "variation": "withdescription",
             "version": "sktwi1xtmkfgx8626",
             "items": [
               {}
@@ -206,25 +189,14 @@
               "title": [
                 {
                   "type": "heading3",
-                  "text": "Careful",
+                  "text": "Except",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Tempor Lorem qui adipisicing consectetur quis cupidatat eu aliqua incididunt voluptate pariatur culpa et. Consequat fugiat commodo velit fugiat. Lorem veniam proident consectetur laboris voluptate velit consectetur minim est magna irure culpa id.",
-                  "spans": []
-                }
-              ],
-              "button_link": {
-                "link_type": "Web",
-                "url": "https://prismic.io"
-              },
-              "button_text": [
-                {
-                  "type": "paragraph",
-                  "text": "Reprehenderit reprehenderit tempor adipisicing minim ad tempor voluptate exercitation velit anim eiusmod amet.",
+                  "text": "Id laborum officia laboris.",
                   "spans": []
                 }
               ]
@@ -242,10 +214,10 @@
             "width": 800,
             "height": 45
           },
-          "withDescriptionAndCta": {
-            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/DemoSimpleHeading/withDescriptionAndCta/preview.png",
+          "withdescription": {
+            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/DemoSimpleHeading/withdescription/preview.png",
             "width": 800,
-            "height": 125
+            "height": 65
           }
         }
       },

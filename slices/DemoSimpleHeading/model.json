@@ -25,8 +25,8 @@
       "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
     },
     {
-      "id": "withDescriptionAndCta",
-      "name": "With Description and CTA",
+      "id": "withdescription",
+      "name": "withdescription",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "DemoSimpleHeading",
@@ -44,23 +44,6 @@
           "type": "StructuredText",
           "config": {
             "label": "Description",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "button_link": {
-          "type": "Link",
-          "config": {
-            "label": "Button Link",
-            "placeholder": "",
-            "select": null
-          }
-        },
-        "button_text": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Button Text",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
