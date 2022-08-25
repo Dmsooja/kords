@@ -4,6 +4,7 @@ import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import { linkResolver } from '../../prismicio'
 import { PrismicRichText, PrismicLink } from '@prismicio/react'
+import Link from 'next/link'
 
 
 function classNames(...classes) {
@@ -53,14 +54,17 @@ const Menu = ({ slice }) => (
                     <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                       {slice?.items?.map((item, idx) => {
                         return (
+                          // <PrismicRichText key={idx} field={item.dropdown_level_2_label} />
                           <PrismicLink
+                            linkResolver={linkResolver}
                             field={item.dropdown_level_2_link}
                             key={idx}
                             className="-m-3 p-3 block rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
                           >
-                            <div className="text-base font-medium text-gray-900">
-                              <PrismicRichText field={item.dropdown_level_2_label} />
-                            </div>
+                            <PrismicRichText
+                              field={item.dropdown_level_2_label}
+                              className="text-base font-medium text-gray-900"
+                            />
                           </PrismicLink>
                         )
                       })}

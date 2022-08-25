@@ -21,7 +21,7 @@ export function linkResolver(doc) {
       return `/${doc.lang}`
     case 'blog':
       return `/${doc.lang}/blog`
-    case 'blog-article':
+    case 'blog_article':
       return `/${doc.lang}/blog/${doc.uid}`
     case 'about':
       return `/${doc.lang}/about`

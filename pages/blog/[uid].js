@@ -24,17 +24,17 @@ export async function getStaticProps({ params, previewData, locale }) {
 
   // Query the page
   // const page = await client.getByUID("blog-article", params.uid);
-  const page = await client.getByUID("blog-article", params.uid, { lang: locale });
+  const page = await client.getByUID("blog_article", params.uid, { lang: locale });
 
   // Query the navigation
-  const footer = await client.getSingle("footer");
-  const menu = await client.getSingle("menu", { lang: locale });
+  // const footer = await client.getSingle("footer");
+  const menu = await client.getSingle("menu_main", { lang: locale });
 
 
   return {
     props: {
       menu,
-      footer,
+      // footer,
       doc: page
     },
   };
@@ -50,7 +50,7 @@ export async function getStaticProps({ params, previewData, locale }) {
 // determines all of the routes for statically-generated dynamic pages
 export async function getStaticPaths() {
   const client = createClient()
-  const documents = await client.getAllByType('blog-article', { lang: '*' })
+  const documents = await client.getAllByType('blog_article', { lang: '*' })
 
   return {
     paths: documents.map((doc) => prismicH.asLink(doc, linkResolver)),
