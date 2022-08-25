@@ -14,6 +14,26 @@ export const blogArticlesGraphQuery =`
 					}
 				}
 			}
+			...on demo_simple_heading {
+				variation {
+					...on default {
+						items {
+							...itemsFields
+						}
+						primary {
+							...primaryFields
+						}
+					}
+					...on withDescriptionAndCta {
+						items {
+							...itemsFields
+						}
+						primary {
+							...primaryFields
+						}
+					}
+				}
+			}
 			...on scrolling_cards {
 				variation {
 					...on default {
