@@ -2,7 +2,7 @@ import { SliceZone } from "@prismicio/react";
 import { Layout } from "../components/Layout";
 import { createClient } from '../prismicio';
 import { components } from '../slices/index';
-import { blogArticlesGraphQuery } from "../queries";
+import { homeArticlesGraphQuery } from "../queries";
 
 
 const __allComponents = { ...components }
@@ -24,7 +24,7 @@ export async function getStaticProps({ previewData, locale }) {
   const client = createClient(previewData)
 
   // const document = (await client.getSingle('homepage', { lang: locale }).catch(e => {
-  const document = (await client.getSingle('homepage', { "graphQuery": blogArticlesGraphQuery, lang: locale }).catch(e => {
+  const document = (await client.getSingle('homepage', { "graphQuery": homeArticlesGraphQuery, lang: locale }).catch(e => {
       return null;
   }));
   

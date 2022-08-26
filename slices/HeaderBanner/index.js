@@ -2,7 +2,7 @@ import React from 'react'
 import { PrismicRichText } from '@prismicio/react'
 
 const LogoCloud = ({ slice }) => (
-  <section>
+  <section className='mb-4'>
     <div className="relative bg-indigo-800">
       <div className="absolute inset-0">
         <img

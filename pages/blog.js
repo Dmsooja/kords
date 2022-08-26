@@ -1,6 +1,6 @@
-import { PrismicLink, PrismicImage, SliceZone } from "@prismicio/react";
+import { PrismicLink, PrismicImage, SliceZone, PrismicRichText } from "@prismicio/react";
 import { Layout } from "../components/Layout";
-import { createClient } from '../prismicio';
+import { createClient, linkResolver } from '../prismicio';
 import { components } from '../slices/index';
 import { blogArticlesGraphQuery } from "../queries";
 import * as prismicH from "@prismicio/helpers";
@@ -11,39 +11,36 @@ const __allComponents = { ...components }
 
 const ArticleCard = ({ article }) => {
   return (
-    <div className="sm:flex">
-      {/* <PrismicLink document={article}> */}
+    <div className="sm:flex sm:items-top">
       <div className="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
-        {/* <svg
-          className="h-32 w-full sm:w-32 border border-gray-300 bg-white text-gray-300"
-          preserveAspectRatio="none"
-          stroke="currentColor"
-          fill="none"
-          viewBox="0 0 200 200"
-          aria-hidden="true"
-        >
-          <path vectorEffect="non-scaling-stroke" strokeWidth={1} d="M0 0l200 200M0 200L200 0" />
-        </svg> */}
         <div className="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4 relative w-40 h-40">
-
-          {prismicH.isFilled.image(article.data.featuredImage) && (
-            <PrismicNextImage
-              field={article.data.featuredImage}
-              layout="fill"
-              className="object-cover"
-            />
-          )}
+          <PrismicLink
+            document={article}
+            linkResolver={linkResolver}
+          >
+            {prismicH.isFilled.image(article.data.featured_image) && (
+              <PrismicNextImage
+                field={article.data.featured_image}
+                layout="fill"
+                className="rounded-md object-center object-cover"
+              />
+            )}
+          </PrismicLink>
         </div>
-
       </div>
       <div>
-        <h4 className="text-lg font-bold">Lorem ipsum</h4>
-        <p className="mt-1">
-          Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam expedita quia omnis voluptatem. Minus
-          quidem ipsam quia iusto.
+        <PrismicLink
+          document={article}
+          linkResolver={linkResolver}
+        >
+          <h4 className="text-lg font-bold">
+            <PrismicRichText field={article.data.article_title} />
+          </h4>
+        </PrismicLink>
+        <p className="mt-1 text-gray-500">
+          <PrismicRichText field={article.data.article_excerpt} />
         </p>
       </div>
-      {/* </PrismicLink> */}
     </div>
   )
 }
@@ -54,10 +51,11 @@ export default function Blog({ doc, menu, articles }) {
       {/* <Layout menu={menu} footer={footer} altLangs={doc.alternate_languages}> */}
       <Layout altLangs={doc.alternate_languages} menu={menu}>
         <SliceZone slices={doc.data.slices} components={__allComponents} />
-        <ul role="list" className="space-y-3">
+        <h2>Our latest articles</h2>
+        <ul role="list" className="bg-white shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
           {articles?.map((article, idx) => {
             return (
-              <li key={idx} className="bg-white shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+              <li key={idx} className="border-b border-gray-200 py-4">
                 <ArticleCard article={article} />
               </li>
             )

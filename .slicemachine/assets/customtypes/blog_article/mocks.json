@@ -14,11 +14,11 @@
     "article_title": [
       {
         "type": "heading2",
-        "text": "Choice",
+        "text": "Trunk",
         "spans": []
       }
     ],
-    "article_category": "How to",
+    "article_category": "Guides",
     "featured_image": {
       "dimensions": {
         "width": 1920,
@@ -26,19 +26,19 @@
       },
       "alt": null,
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04"
+      "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482"
     },
     "article_excerpt": [
       {
         "type": "paragraph",
-        "text": "Commodo cupidatat ut enim occaecat ea. Labore quis excepteur dolore sit velit consequat voluptate nisi anim velit ullamco occaecat. Culpa adipisicing occaecat cupidatat duis veniam nostrud sit dolor dolore velit.",
+        "text": "Ex Lorem excepteur laborum irure laborum dolore nulla id.",
         "spans": []
       }
     ],
     "article_author_name": [
       {
         "type": "paragraph",
-        "text": "Laborum ut quis deserunt sunt labore cillum ea.",
+        "text": "Enim dolor esse ut ipsum sunt nostrud esse. Aliqua ullamco aute et tempor ea in ea laborum anim ad elit excepteur elit dolor.",
         "spans": []
       }
     ],
@@ -53,11 +53,11 @@
       },
       "alt": null,
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8"
+      "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0"
     },
-    "article_reading_time": 23,
-    "article_publishing_date": "2018-10-30",
-    "article_update_timestamp": "2021-11-23T17:09:58+0000",
+    "article_reading_time": 80,
+    "article_publishing_date": "2021-06-02",
+    "article_update_timestamp": "2020-05-09T00:16:28+0000",
     "slices": []
   }
 }
