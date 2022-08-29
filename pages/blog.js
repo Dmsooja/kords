@@ -33,13 +33,13 @@ const ArticleCard = ({ article }) => {
           document={article}
           linkResolver={linkResolver}
         >
-          <h4 className="text-lg font-bold">
+          <div className="text-lg font-bold">
             <PrismicRichText field={article.data.article_title} />
-          </h4>
+          </div>
         </PrismicLink>
-        <p className="mt-1 text-gray-500">
+        <div className="mt-1 text-gray-500">
           <PrismicRichText field={article.data.article_excerpt} />
-        </p>
+        </div>
       </div>
     </div>
   )
@@ -69,7 +69,7 @@ export default function Blog({ doc, menu, articles }) {
 export async function getStaticProps({ previewData, locale }) {
   const client = createClient(previewData)
 
-  const document = (await client.getSingle('blog', { lang: locale }).catch(e => {
+  const document = (await client.getSingle('blog', { "graphQuery": blogArticlesGraphQuery, lang: locale }).catch(e => {
     return null;
   }));
 
