@@ -11,7 +11,7 @@ const LangIcon = ({ lang }) => {
 export const LanguageSwitcher = ({ altLangs = [] }) => {
   return (
     <ul>
-      {altLangs.map((altLang) => {
+      {altLangs?.map((altLang) => {
         return (
           <li key={altLang.lang}>
             <PrismicLink

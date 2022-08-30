@@ -6,7 +6,7 @@ import { Layout } from "../../components/Layout";
 
 const Page = ({ menu, doc }) => {
   return (
-    <Layout menu={menu} altLangs={doc.alternate_languages}>
+    <Layout menu={menu} altLangs={doc?.alternate_languages}>
       <SliceZone slices={doc.data.slices} components={components} />
     </Layout>
   );
