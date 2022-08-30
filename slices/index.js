@@ -7,6 +7,7 @@ import HeaderBanner from './HeaderBanner';
 import HeroSectionCard from './HeroSectionCard';
 import Image from './Image';
 import Menu from './Menu';
+import NouhaHeading from './NouhaHeading';
 import ScrollingCards from './ScrollingCards';
 import Text from './Text';
 import TopPromotionBanner from './TopPromotionBanner';
@@ -19,6 +20,7 @@ export {
 	HeroSectionCard,
 	Image,
 	Menu,
+	NouhaHeading,
 	ScrollingCards,
 	Text,
 	TopPromotionBanner,
@@ -32,6 +34,7 @@ export const components = {
 	hero_section_card: HeroSectionCard,
 	image: Image,
 	menu: Menu,
+	nouha_heading: NouhaHeading,
 	scrolling_cards: ScrollingCards,
 	text: Text,
 	top_promotion_banner: TopPromotionBanner,

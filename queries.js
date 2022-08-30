@@ -14,17 +14,9 @@ export const homeArticlesGraphQuery =`
 					}
 				}
 			}
-			...on demo_simple_heading {
+			...on nouha_heading {
 				variation {
 					...on default {
-						items {
-							...itemsFields
-						}
-						primary {
-							...primaryFields
-						}
-					}
-					...on withdescription {
 						items {
 							...itemsFields
 						}

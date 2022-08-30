@@ -1123,6 +1123,70 @@
           }
         }
       },
+      "nouha_heading": {
+        "library": "slices",
+        "id": "nouha_heading",
+        "name": "NouhaHeading",
+        "description": "NouhaHeading",
+        "model": {
+          "id": "nouha_heading",
+          "type": "SharedSlice",
+          "name": "NouhaHeading",
+          "description": "NouhaHeading",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "NouhaHeading",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Title here",
+                    "allowTargetBlank": true,
+                    "single": "heading3"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading3",
+                  "text": "School",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "nouha_heading"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/dianka/Documents/Demos/kords/slices/NouhaHeading/default/preview.png",
+            "width": 736,
+            "height": 181
+          }
+        }
+      },
       "scrolling_cards": {
         "library": "slices",
         "id": "scrolling_cards",

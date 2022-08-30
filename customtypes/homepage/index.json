@@ -34,6 +34,9 @@
             },
             "demo_simple_heading": {
               "type": "SharedSlice"
+            },
+            "nouha_heading": {
+              "type": "SharedSlice"
             }
           }
         }
