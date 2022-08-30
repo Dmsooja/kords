@@ -24,14 +24,6 @@ export const homeArticlesGraphQuery =`
 							...primaryFields
 						}
 					}
-					...on withCta {
-						items {
-							...itemsFields
-						}
-						primary {
-							...primaryFields
-						}
-					}
 				}
 			}
 			...on scrolling_cards {

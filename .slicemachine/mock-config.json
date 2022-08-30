@@ -234,25 +234,6 @@
               "patternType": "HEADING",
               "blocks": 1
             }
-          },
-          "description": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          }
-        }
-      },
-      "withCta": {
-        "primary": {
-          "cta_label": {
-            "content": "See more"
-          },
-          "description": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
           }
         }
       }

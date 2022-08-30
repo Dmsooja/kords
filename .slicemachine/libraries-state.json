@@ -1149,60 +1149,6 @@
                     "allowTargetBlank": true,
                     "single": "heading3"
                   }
-                },
-                "description": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Description",
-                    "placeholder": "",
-                    "allowTargetBlank": true,
-                    "single": "paragraph"
-                  }
-                }
-              },
-              "items": {},
-              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-            },
-            {
-              "id": "withCta",
-              "name": "With CTA",
-              "docURL": "...",
-              "version": "sktwi1xtmkfgx8626",
-              "description": "NouhaHeading",
-              "primary": {
-                "title": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Title",
-                    "placeholder": "Title here",
-                    "allowTargetBlank": true,
-                    "single": "heading3"
-                  }
-                },
-                "cta_label": {
-                  "type": "Text",
-                  "config": {
-                    "label": "CTA label",
-                    "placeholder": "Link label here"
-                  }
-                },
-                "cta_link": {
-                  "type": "Link",
-                  "config": {
-                    "label": "CTA Link",
-                    "placeholder": "URL here",
-                    "allowTargetBlank": true,
-                    "select": null
-                  }
-                },
-                "description": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Description",
-                    "placeholder": "",
-                    "allowTargetBlank": true,
-                    "single": "paragraph"
-                  }
                 }
               },
               "items": {},
@@ -1221,43 +1167,7 @@
               "title": [
                 {
                   "type": "heading3",
-                  "text": "Trail",
-                  "spans": []
-                }
-              ],
-              "description": [
-                {
-                  "type": "paragraph",
-                  "text": "Culpa labore aliqua officia nisi minim magna dolor ullamco tempor labore. Tempor aliqua id excepteur Lorem excepteur cupidatat laborum adipisicing occaecat irure aliquip qui.",
-                  "spans": []
-                }
-              ]
-            },
-            "slice_type": "nouha_heading"
-          },
-          "withCta": {
-            "variation": "withCta",
-            "version": "sktwi1xtmkfgx8626",
-            "items": [
-              {}
-            ],
-            "primary": {
-              "title": [
-                {
-                  "type": "heading3",
-                  "text": "Exchange",
-                  "spans": []
-                }
-              ],
-              "cta_label": "See more",
-              "cta_link": {
-                "link_type": "Web",
-                "url": "http://twitter.com"
-              },
-              "description": [
-                {
-                  "type": "paragraph",
-                  "text": "Nulla Lorem aute cupidatat culpa fugiat amet reprehenderit do nisi irure nisi sint deserunt sint elit.",
+                  "text": "School",
                   "spans": []
                 }
               ]
@@ -1274,11 +1184,6 @@
             "path": "/Users/dianka/Documents/Demos/kords/slices/NouhaHeading/default/preview.png",
             "width": 736,
             "height": 181
-          },
-          "withCta": {
-            "path": "/Users/dianka/Documents/Demos/kords/slices/NouhaHeading/withCta/preview.png",
-            "width": 1254,
-            "height": 148
           }
         }
       },
