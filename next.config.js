@@ -20,7 +20,7 @@ const nextConfig = async () => {
     reactStrictMode: true,
     i18n: {
       locales,
-      defaultLocale: locale
+      defaultLocale: locales[0],
 },
   };
 };
