@@ -6,6 +6,10 @@
 
 // module.exports = nextConfig
 
+const prismic = require("@prismicio/client");
+
+const sm = require("./sm.json");
+
 const nextConfig = async () => {
   const client = prismic.createClient(sm.apiEndpoint);
 
@@ -23,9 +27,6 @@ const nextConfig = async () => {
 
 module.exports = nextConfig;
 
-// const prismic = require("@prismicio/client");
-
-// const sm = require("./sm.json");
 
 // /**
 //  * @returns {import('next').NextConfig}
