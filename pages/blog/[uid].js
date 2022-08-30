@@ -23,7 +23,6 @@ export async function getStaticProps({ params, previewData, locale }) {
   const client = createClient({ previewData });
 
   // Query the page
-  // const page = await client.getByUID("blog-article", params.uid);
   const page = await client.getByUID("blog_article", params.uid, { lang: locale });
 
   // Query the navigation

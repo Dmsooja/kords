@@ -1,7 +1,6 @@
 import { PrismicLink } from '@prismicio/react';
 import { linkResolver } from '../../prismicio';
 
-
 const LangIcon = ({ lang }) => {
   const code = lang.substring(3).toLowerCase()
 
