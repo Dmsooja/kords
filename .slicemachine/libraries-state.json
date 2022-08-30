@@ -1149,6 +1149,15 @@
                     "allowTargetBlank": true,
                     "single": "heading3"
                   }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
                 }
               },
               "items": {},
@@ -1167,7 +1176,14 @@
               "title": [
                 {
                   "type": "heading3",
-                  "text": "School",
+                  "text": "Goose",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Aute pariatur sint pariatur fugiat eiusmod fugiat velit exercitation do occaecat consequat aliqua. Incididunt velit ullamco velit consectetur exercitation nulla minim.",
                   "spans": []
                 }
               ]
