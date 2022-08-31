@@ -1162,50 +1162,6 @@
               },
               "items": {},
               "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-            },
-            {
-              "id": "withCta",
-              "name": "With CTA",
-              "docURL": "...",
-              "version": "sktwi1xtmkfgx8626",
-              "description": "NouhaHeading",
-              "primary": {
-                "title": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Title",
-                    "placeholder": "Title here",
-                    "allowTargetBlank": true,
-                    "single": "heading3"
-                  }
-                },
-                "description": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Description",
-                    "placeholder": "",
-                    "allowTargetBlank": true,
-                    "single": "paragraph"
-                  }
-                },
-                "cta_url": {
-                  "type": "Link",
-                  "config": {
-                    "label": "CTA URL",
-                    "placeholder": "",
-                    "select": null
-                  }
-                },
-                "cta_label": {
-                  "type": "Text",
-                  "config": {
-                    "label": "CTA Label",
-                    "placeholder": ""
-                  }
-                }
-              },
-              "items": {},
-              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
           ]
         },
@@ -1220,46 +1176,17 @@
               "title": [
                 {
                   "type": "heading3",
-                  "text": "Broken",
+                  "text": "Goose",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Elit quis proident dolor occaecat eu irure non fugiat magna consequat magna velit reprehenderit. Enim eiusmod reprehenderit est deserunt cupidatat veniam eiusmod. Aliqua minim veniam deserunt.",
+                  "text": "Aute pariatur sint pariatur fugiat eiusmod fugiat velit exercitation do occaecat consequat aliqua. Incididunt velit ullamco velit consectetur exercitation nulla minim.",
                   "spans": []
                 }
               ]
-            },
-            "slice_type": "nouha_heading"
-          },
-          "withCta": {
-            "variation": "withCta",
-            "version": "sktwi1xtmkfgx8626",
-            "items": [
-              {}
-            ],
-            "primary": {
-              "title": [
-                {
-                  "type": "heading3",
-                  "text": "Managed",
-                  "spans": []
-                }
-              ],
-              "description": [
-                {
-                  "type": "paragraph",
-                  "text": "Ullamco ut officia aliquip consectetur nostrud consectetur magna. Aute mollit ex est cupidatat id dolor laborum ex labore voluptate reprehenderit velit.",
-                  "spans": []
-                }
-              ],
-              "cta_url": {
-                "link_type": "Web",
-                "url": "http://google.com"
-              },
-              "cta_label": "half"
             },
             "slice_type": "nouha_heading"
           }
@@ -1270,14 +1197,9 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/NouhaHeading/default/preview.png",
-            "width": 800,
-            "height": 93
-          },
-          "withCta": {
-            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/NouhaHeading/withCta/preview.png",
-            "width": 800,
-            "height": 93
+            "path": "/Users/dianka/Documents/Demos/kords/slices/NouhaHeading/default/preview.png",
+            "width": 736,
+            "height": 181
           }
         }
       },
