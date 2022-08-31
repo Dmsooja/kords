@@ -1162,6 +1162,50 @@
               },
               "items": {},
               "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "withCta",
+              "name": "With CTA",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "NouhaHeading",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Title here",
+                    "allowTargetBlank": true,
+                    "single": "heading3"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                },
+                "cta_label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA Label",
+                    "placeholder": ""
+                  }
+                },
+                "cta_url": {
+                  "type": "Link",
+                  "config": {
+                    "label": "CTA URL",
+                    "placeholder": "",
+                    "select": null
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
           ]
         },
@@ -1176,17 +1220,46 @@
               "title": [
                 {
                   "type": "heading3",
-                  "text": "Goose",
+                  "text": "Studying",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Aute pariatur sint pariatur fugiat eiusmod fugiat velit exercitation do occaecat consequat aliqua. Incididunt velit ullamco velit consectetur exercitation nulla minim.",
+                  "text": "Dolore adipisicing exercitation ex ad pariatur veniam eu aliquip aliquip velit laborum laborum eu. Sunt fugiat commodo aute ea proident fugiat sunt et occaecat officia est ipsum sint proident pariatur.",
                   "spans": []
                 }
               ]
+            },
+            "slice_type": "nouha_heading"
+          },
+          "withCta": {
+            "variation": "withCta",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading3",
+                  "text": "Remarkable",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Aliqua adipisicing laboris amet adipisicing qui nisi adipisicing ad exercitation nulla. Ullamco sint in aute esse magna id mollit incididunt.",
+                  "spans": []
+                }
+              ],
+              "cta_label": "compass",
+              "cta_url": {
+                "link_type": "Web",
+                "url": "http://twitter.com"
+              }
             },
             "slice_type": "nouha_heading"
           }
