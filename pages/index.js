@@ -9,7 +9,7 @@ const __allComponents = { ...components }
 
 
 // export default function Home({ doc, menu, footer }) {
-export default function Home({ doc, menu, settings }) {
+  export default function Home({ doc, menu, settings}) {
   return (
     <div>
       {/* <Layout menu={menu} footer={footer} altLangs={doc.alternate_languages}> */}
@@ -24,60 +24,28 @@ export async function getStaticProps({ previewData, locale }) {
   const client = createClient(previewData)
 
   // const document = (await client.getSingle('homepage', { lang: locale }).catch(e => {
-  //   return null;
+  const document = (await client.getSingle('homepage', { "graphQuery": homeArticlesGraphQuery, lang: locale }).catch(e => {
+      return null;
+  }));
+  
+
+  // const footer = (await client.getSingle("footer", { lang: locale }).catch(e => {
+  //   return null
   // }));
 
-  
-  
-  const articlesData = (await client.getSingle('homepage', { "graphQuery": homeArticlesGraphQuery, lang: locale }).catch(e => {
-    return null;
+  const menu = (await client.getSingle("menu_main", { lang: locale }).catch(e => {
+    return null
   }));
-  
-  const document = (await client.getSingle('homepage', { "graphQuery": homeArticlesGraphQuery, lang: locale }).catch(e => {
-    return null;
-  }));
-  
+
+
   if (!document) {
     return {
       notFound: true,
     }
   }
 
-  let index=0
-
-  const docWithArticles = {
-    ...document,
-    data: {
-      ...document.data,
-      slices: document?.data?.slices?.map(slice => {
-        if (slice.slice_type === "withContentRelationship") {
-          index++
-          return {
-            ...articlesData?.data?.slices[index - 1]
-          }
-        }
-        return {
-          ...slice
-        }
-      })
-    }
-  }
-
-
-  
-  const menu = (await client.getSingle("menu_main", { lang: locale }).catch(e => {
-    return null
-  }));
-  
-  
-  // const footer = (await client.getSingle("footer", { lang: locale }).catch(e => {
-  //   return null
-  // }));
-  
-
   return {
     props: {
-      // doc: docWithArticles,
       doc: document,
       menu: menu,
       // footer: footer,
