@@ -1197,14 +1197,9 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/NouhaHeading/default/preview.png",
-            "width": 800,
-            "height": 93
-          },
-          "withCta": {
-            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/NouhaHeading/withCta/preview.png",
-            "width": 800,
-            "height": 93
+            "path": "/Users/dianka/Documents/Demos/kords/slices/NouhaHeading/default/preview.png",
+            "width": 736,
+            "height": 181
           }
         }
       },
