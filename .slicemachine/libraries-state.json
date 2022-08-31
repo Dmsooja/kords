@@ -1162,50 +1162,6 @@
               },
               "items": {},
               "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-            },
-            {
-              "id": "withCta",
-              "name": "With CTA",
-              "docURL": "...",
-              "version": "sktwi1xtmkfgx8626",
-              "description": "NouhaHeading",
-              "primary": {
-                "title": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Title",
-                    "placeholder": "Title here",
-                    "allowTargetBlank": true,
-                    "single": "heading3"
-                  }
-                },
-                "description": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Description",
-                    "placeholder": "",
-                    "allowTargetBlank": true,
-                    "single": "paragraph"
-                  }
-                },
-                "cta_label": {
-                  "type": "Text",
-                  "config": {
-                    "label": "CTA Label",
-                    "placeholder": ""
-                  }
-                },
-                "cta_url": {
-                  "type": "Link",
-                  "config": {
-                    "label": "CTA URL",
-                    "placeholder": "",
-                    "select": null
-                  }
-                }
-              },
-              "items": {},
-              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
           ]
         },
@@ -1220,46 +1176,17 @@
               "title": [
                 {
                   "type": "heading3",
-                  "text": "Throughout",
+                  "text": "Goose",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Fugiat aute eiusmod dolore duis tempor tempor et aliqua. In consequat incididunt consequat aliqua ad velit.",
+                  "text": "Aute pariatur sint pariatur fugiat eiusmod fugiat velit exercitation do occaecat consequat aliqua. Incididunt velit ullamco velit consectetur exercitation nulla minim.",
                   "spans": []
                 }
               ]
-            },
-            "slice_type": "nouha_heading"
-          },
-          "withCta": {
-            "variation": "withCta",
-            "version": "sktwi1xtmkfgx8626",
-            "items": [
-              {}
-            ],
-            "primary": {
-              "title": [
-                {
-                  "type": "heading3",
-                  "text": "Record",
-                  "spans": []
-                }
-              ],
-              "description": [
-                {
-                  "type": "paragraph",
-                  "text": "Ex consectetur dolor amet do ea reprehenderit est sunt occaecat deserunt tempor nulla ea occaecat. Duis do eiusmod ut tempor ea labore ex officia reprehenderit do excepteur irure.",
-                  "spans": []
-                }
-              ],
-              "cta_label": "alive",
-              "cta_url": {
-                "link_type": "Web",
-                "url": "https://slicemachine.dev"
-              }
             },
             "slice_type": "nouha_heading"
           }
@@ -1273,11 +1200,6 @@
             "path": "/Users/dianka/Documents/Demos/kords/slices/NouhaHeading/default/preview.png",
             "width": 736,
             "height": 181
-          },
-          "withCta": {
-            "path": "/Users/dianka/Documents/Demos/kords/slices/NouhaHeading/withCta/preview.png",
-            "width": 1257,
-            "height": 142
           }
         }
       },
