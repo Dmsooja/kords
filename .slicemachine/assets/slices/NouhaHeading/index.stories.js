@@ -5,5 +5,8 @@ export default {
 }
 
 
-export const _Default = () => <MyComponent slice={{"variation":"default","version":"sktwi1xtmkfgx8626","items":[{}],"primary":{"title":[{"type":"heading3","text":"Goose","spans":[]}],"description":[{"type":"paragraph","text":"Aute pariatur sint pariatur fugiat eiusmod fugiat velit exercitation do occaecat consequat aliqua. Incididunt velit ullamco velit consectetur exercitation nulla minim.","spans":[]}]},"slice_type":"nouha_heading","id":"_Default"}} />
+export const _Default = () => <MyComponent slice={{"variation":"default","version":"sktwi1xtmkfgx8626","items":[{}],"primary":{"title":[{"type":"heading3","text":"Throughout","spans":[]}],"description":[{"type":"paragraph","text":"Fugiat aute eiusmod dolore duis tempor tempor et aliqua. In consequat incididunt consequat aliqua ad velit.","spans":[]}]},"slice_type":"nouha_heading","id":"_Default"}} />
 _Default.storyName = ''
+
+export const _WithCta = () => <MyComponent slice={{"variation":"withCta","version":"sktwi1xtmkfgx8626","items":[{}],"primary":{"title":[{"type":"heading3","text":"Record","spans":[]}],"description":[{"type":"paragraph","text":"Ex consectetur dolor amet do ea reprehenderit est sunt occaecat deserunt tempor nulla ea occaecat. Duis do eiusmod ut tempor ea labore ex officia reprehenderit do excepteur irure.","spans":[]}],"cta_label":"alive","cta_url":{"link_type":"Web","url":"https://slicemachine.dev"}},"slice_type":"nouha_heading","id":"_WithCta"}} />
+_WithCta.storyName = ''
