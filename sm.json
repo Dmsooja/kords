@@ -1,5 +1,5 @@
 {
-  "apiEndpoint": "https://kords.prismic.io/api/v2",
+  "apiEndpoint": "https://kords.cdn.prismic.io/api/v2",
   "libraries": [
     "@/slices"
   ],
