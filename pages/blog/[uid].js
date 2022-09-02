@@ -4,9 +4,9 @@ import * as prismicH from '@prismicio/helpers';
 import { components } from "../../slices";
 import { Layout } from "../../components/Layout";
 
-const Page = ({ menu, doc }) => {
+const Page = ({ menu, doc, footer }) => {
   return (
-    <Layout menu={menu} altLangs={doc?.alternate_languages}>
+    <Layout menu={menu} footer={footer} altLangs={doc?.alternate_languages}>
       <SliceZone slices={doc.data.slices} components={components} />
     </Layout>
   );
@@ -27,14 +27,18 @@ export async function getStaticProps({ params, previewData, locale }) {
   const page = await client.getByUID("blog_article", params.uid, { lang: locale });
 
   // Query the navigation
-  // const footer = await client.getSingle("footer");
   const menu = await client.getSingle("menu_main", { lang: locale });
+
+  const footer = (await client.getSingle("footer", { lang: locale }).catch(e => {
+    return null
+  }));
+  
 
 
   return {
     props: {
       menu,
-      // footer,
+      footer,
       doc: page
     },
   };

@@ -1,24 +1,26 @@
 import Head from "next/head";
 import { Header } from "./Header/Header";
-// import { Footer } from "./Footer";
+import { Footer } from "./Footer/FooterLinks";
 
 export const Layout = ({ children, menu, footer, altLangs }) => {
   return (
-    <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-      <Head>
-        <title> Kords - Find your music </title>
-      </Head>
-      {menu?.data ?
-        <Header menu={menu} altLangs={altLangs} />
-        : null
-      }
-      <main>
-        {children}
+    <div>
+      <div>
+        <Head>
+          <title> Kords - Find your music </title>
+        </Head>
+        {menu?.data ?
+          <Header menu={menu} altLangs={altLangs} />
+          : null
+        }
+        <main className="my-10">
+          {children}
         </main>
-      {/* {footer?.data ?
+      </div>
+      {footer?.data ?
         <Footer footer={footer} />
         : null
-      } */}
+      }
     </div>
   );
 };
