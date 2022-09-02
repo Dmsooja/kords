@@ -45,11 +45,10 @@ const ArticleCard = ({ article }) => {
   )
 }
 
-export default function Blog({ doc, menu, articles }) {
+export default function Blog({ doc, menu, footer, articles }) {
   return (
     <div>
-      {/* <Layout menu={menu} footer={footer} altLangs={doc.alternate_languages}> */}
-      <Layout altLangs={doc.alternate_languages} menu={menu}>
+      <Layout altLangs={doc.alternate_languages} menu={menu} footer={footer}>
         <SliceZone slices={doc.data.slices} components={__allComponents} />
         <h2>Our latest articles</h2>
         <ul role="list" className="bg-white shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
@@ -77,9 +76,9 @@ export async function getStaticProps({ previewData, locale }) {
     return null
   });
 
-  // const footer = (await client.getSingle("footer", { lang: locale }).catch(e => {
-  //   return null
-  // }));
+  const footer = (await client.getSingle("footer", { lang: locale }).catch(e => {
+    return null
+  }));
 
   const menu = (await client.getSingle("menu_main", { lang: locale }).catch(e => {
     return null
@@ -97,7 +96,7 @@ export async function getStaticProps({ previewData, locale }) {
       doc: document,
       articles: articles,
       menu: menu,
-      // footer: footer,
+      footer: footer,
     }, // will be passed to the page component as props
   }
 }
