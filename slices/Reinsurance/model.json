@@ -27,10 +27,21 @@
           "config": {
             "label": "Reinsurance Image",
             "constraint": {
-              "width": 112,
-              "height": 96
+              "width": null,
+              "height": null
             },
-            "thumbnails": []
+            "thumbnails": [
+              {
+                "name": "icons",
+                "width": 96,
+                "height": 96
+              },
+              {
+                "name": "small icons",
+                "width": 40,
+                "height": 40
+              }
+            ]
           }
         },
         "reinsurance_label": {

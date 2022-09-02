@@ -1271,10 +1271,21 @@
                   "config": {
                     "label": "Reinsurance Image",
                     "constraint": {
-                      "width": 112,
-                      "height": 96
+                      "width": null,
+                      "height": null
                     },
-                    "thumbnails": []
+                    "thumbnails": [
+                      {
+                        "name": "icons",
+                        "width": 96,
+                        "height": 96
+                      },
+                      {
+                        "name": "small icons",
+                        "width": 40,
+                        "height": 40
+                      }
+                    ]
                   }
                 },
                 "reinsurance_label": {
@@ -1308,24 +1319,42 @@
               {
                 "reinsurance_image": {
                   "dimensions": {
-                    "width": 112,
-                    "height": 96
+                    "width": 900,
+                    "height": 500
                   },
                   "alt": null,
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c"
+                  "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468",
+                  "icons": {
+                    "dimensions": {
+                      "width": 96,
+                      "height": 96
+                    },
+                    "alt": null,
+                    "copyright": null,
+                    "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a"
+                  },
+                  "small icons": {
+                    "dimensions": {
+                      "width": 40,
+                      "height": 40
+                    },
+                    "alt": null,
+                    "copyright": null,
+                    "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea"
+                  }
                 },
                 "reinsurance_label": [
                   {
                     "type": "heading3",
-                    "text": "Truck",
+                    "text": "Drink",
                     "spans": []
                   }
                 ],
                 "reinsurance_description": [
                   {
                     "type": "paragraph",
-                    "text": "Veniam sint dolor esse duis dolor ex nisi et aliquip proident nulla nostrud. Adipisicing nisi sunt Lorem voluptate fugiat anim labore consectetur duis cillum.",
+                    "text": "Aliquip est elit officia non aliqua qui pariatur do ea.",
                     "spans": []
                   }
                 ]
@@ -1335,7 +1364,7 @@
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Ought",
+                  "text": "Forgot",
                   "spans": []
                 }
               ]

@@ -28,8 +28,7 @@ const perks = [
 ]
 
 const Reinsurance = ({ slice }) => (
-  <section aria-labelledby="perks-heading" className="border-t border-gray-200 bg-gray-50">
-    <PrismicRichText field={slice.primary.title} id="perks-heading" className="sr-only" />
+  <section className="border-t border-gray-200 bg-gray-50">
     <div className="mx-auto max-w-7xl py-24 px-4 sm:px-6 sm:py-32 lg:px-8">
       <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-0">
         {slice?.items?.map((item, idx) => {
@@ -40,18 +39,16 @@ const Reinsurance = ({ slice }) => (
             >
               <div className="md:flex-shrink-0">
                 <div className="flow-root">
-                  <img className="-my-1 mx-auto h-24 w-auto" src={item.reinsurance_image.url} alt={item.reinsurance_image.alt} />
+                  <img className="-my-1 mx-auto w-auto" src={item.reinsurance_image.url} alt={item.reinsurance_image.alt} />
                 </div>
               </div>
               <div className="mt-6 md:mt-0 md:ml-4 lg:mt-6 lg:ml-0">
-                <PrismicRichText
-                  field={item.reinsurance_label}
-                  className="text-base font-medium text-gray-900"
-                />
-                <PrismicRichText
-                  field={item.reinsurance_description}
-                  className="mt-3 text-sm text-gray-500"
-                />
+                <div className="text-base font-medium text-gray-900">
+                  <PrismicRichText field={item.reinsurance_label} />
+                </div>
+                <div className="mt-2 text-sm text-gray-500">
+                  <PrismicRichText field={item.reinsurance_description} />
+                </div>
               </div>
             </div>
           )
