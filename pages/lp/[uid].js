@@ -9,11 +9,10 @@ import { PrismicNextImage } from "@prismicio/next";
 
 const __allComponents = { ...components }
 
-export default function Page({ doc, menu, articles }) {
+export default function Page({ doc, menu, articles, footer }) {
   return (
     <div>
-      {/* <Layout menu={menu} footer={footer} altLangs={doc.alternate_languages}> */}
-      <Layout altLangs={doc.alternate_languages} menu={menu}>
+      <Layout altLangs={doc.alternate_languages} menu={menu} footer={footer}>
         <SliceZone slices={doc.data.slices} components={__allComponents} />
       </Layout>
     </div>
@@ -27,9 +26,9 @@ export async function getStaticProps({ params, previewData, locale }) {
     return null
   }));
 
-  // const footer = (await client.getSingle("footer", { lang: locale }).catch(e => {
-  //   return null
-  // }));
+  const footer = (await client.getSingle("footer", { lang: locale }).catch(e => {
+    return null
+  }));
 
   const menu = (await client.getSingle("menu_main", { lang: locale }).catch(e => {
     return null
@@ -46,7 +45,7 @@ export async function getStaticProps({ params, previewData, locale }) {
     props: {
       doc: page,
       menu: menu,
-      // footer: footer,
+      footer: footer,
     },
   }
 }
