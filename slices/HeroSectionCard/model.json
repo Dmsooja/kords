@@ -23,9 +23,21 @@
         "description": {
           "type": "StructuredText",
           "config": {
-            "single": "paragraph",
             "label": "Description",
-            "placeholder": "A nice description of your feature"
+            "placeholder": "A nice description of your feature",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "background_image": {
+          "type": "Image",
+          "config": {
+            "label": "Background Image",
+            "constraint": {
+              "width": 1152,
+              "height": 458
+            },
+            "thumbnails": []
           }
         }
       },
@@ -51,12 +63,10 @@
           }
         },
         "button_text": {
-          "type": "StructuredText",
+          "type": "Text",
           "config": {
             "label": "Button Text",
-            "placeholder": "Get started",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "placeholder": ""
           }
         }
       },
@@ -81,9 +91,21 @@
         "description": {
           "type": "StructuredText",
           "config": {
-            "single": "paragraph",
             "label": "Description",
-            "placeholder": "A nice description of your feature"
+            "placeholder": "A nice description of your feature",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "background_image": {
+          "type": "Image",
+          "config": {
+            "label": "Background Image",
+            "constraint": {
+              "width": 1152,
+              "height": 458
+            },
+            "thumbnails": []
           }
         }
       },

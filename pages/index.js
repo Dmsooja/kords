@@ -36,29 +36,30 @@ export async function getStaticProps({ previewData, locale }) {
     }
   }
   
-  const articlesData = (await client.getSingle('homepage', { "graphQuery": homeArticlesGraphQuery, lang: locale }).catch(e => {
-    return null;
-  }));  
+  // const articlesData = (await client.getSingle('homepage', { "graphQuery": homeArticlesGraphQuery, lang: locale }).catch(e => {
+  //   return null;
+  // }));  
 
-  let index=0
+  // let index=0
 
-  const docWithArticles = {
-    ...document,
-    data: {
-      ...document.data,
-      slices: document?.data?.slices?.map(slice => {
-        if (slice.slice_type === "withContentRelationship") {
-          index++
-          return {
-            ...articlesData?.data?.slices[index - 1]
-          }
-        }
-        return {
-          ...slice
-        }
-      })
-    }
-  }
+  // const docWithArticles = {
+  //   ...document,
+  //   data: {
+  //     ...document.data,
+  //     slices: document?.data?.slices?.map(slice => {
+  //       if (slice.slice_type === "withContentRelationship") {
+  //         index++
+  //         return {
+  //           ...articlesData?.data?.slices[index - 1]
+  //         }
+  //       }
+  //       debugger
+  //       return {
+  //         ...slice
+  //       }
+  //     })
+  //   }
+  // }
 
 
   
@@ -74,7 +75,7 @@ export async function getStaticProps({ previewData, locale }) {
 
   return {
     props: {
-      docWithArticles: docWithArticles,
+      // doc: docWithArticles,
       doc: document,
       menu: menu,
       // footer: footer,

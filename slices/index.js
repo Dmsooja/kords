@@ -8,6 +8,7 @@ import HeroSectionCard from './HeroSectionCard';
 import Image from './Image';
 import Menu from './Menu';
 import NouhaHeading from './NouhaHeading';
+import Reinsurance from './Reinsurance';
 import ScrollingCards from './ScrollingCards';
 import Text from './Text';
 import TopPromotionBanner from './TopPromotionBanner';
@@ -21,6 +22,7 @@ export {
 	Image,
 	Menu,
 	NouhaHeading,
+	Reinsurance,
 	ScrollingCards,
 	Text,
 	TopPromotionBanner,
@@ -35,6 +37,7 @@ export const components = {
 	image: Image,
 	menu: Menu,
 	nouha_heading: NouhaHeading,
+	reinsurance: Reinsurance,
 	scrolling_cards: ScrollingCards,
 	text: Text,
 	top_promotion_banner: TopPromotionBanner,

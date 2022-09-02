@@ -16,17 +16,15 @@
       "social_links": {}
     },
     "category": {},
-    "product_page": {}
+    "product_page": {},
+    "landing_page": {}
   },
   "slices": {
     "HeroSectionCard": {
       "default": {
         "items": {
           "button_text": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
+            "content": "Click here"
           }
         },
         "primary": {
@@ -35,11 +33,25 @@
               "patternType": "HEADING",
               "blocks": 1
             }
+          },
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
           }
         }
       },
       "heroSectionNoCta": {
-        "items": {}
+        "items": {},
+        "primary": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
       }
     },
     "ScrollingCards": {
@@ -238,6 +250,32 @@
           "description": {
             "config": {
               "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Reinsurance": {
+      "default": {
+        "items": {
+          "reinsurance_label": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "reinsurance_description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        },
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
               "blocks": 1
             }
           }

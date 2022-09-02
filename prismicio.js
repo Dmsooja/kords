@@ -23,6 +23,8 @@ export function linkResolver(doc) {
       return `/${doc.lang}/blog`
     case 'blog_article':
       return `/${doc.lang}/blog/${doc.uid}`
+    case 'landing_page':
+      return `/${doc.lang}/lp/${doc.uid}`
     case 'about':
       return `/${doc.lang}/about`
     case 'contact':

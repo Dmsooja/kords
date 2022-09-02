@@ -23,7 +23,6 @@ const FeaturedArticles = ({ slice }) => (
               <div key={idx} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
                 {slice.variation !== "withContentRelationship" ?
                   <div>
-                    {console.log(item)}
                     <div className="flex-shrink-0">
                       <img className="h-48 w-full object-cover" src={item.featured_image.url} alt={item.featured_image.alt} />
                     </div>
@@ -34,7 +33,7 @@ const FeaturedArticles = ({ slice }) => (
                             <PrismicRichText field={item.category_name} />
                           </PrismicLink>
                         </div>
-                        <PrismicLink field={item.article_link} className="block mt-2">
+                        <PrismicLink document={item} className="block mt-2">
                           <div className="text-xl font-semibold text-gray-900"><PrismicRichText field={item.article_title} /></div>
                           <div className="mt-3 text-base text-gray-500"><PrismicRichText field={item.article_excerpt} /></div>
                         </PrismicLink>
@@ -73,7 +72,7 @@ const FeaturedArticles = ({ slice }) => (
                             <PrismicRichText field={item.linked_article.data.category_name} />
                           </PrismicLink>
                         </div>
-                        <PrismicLink field={item.linked_article.data.article_link} className="block mt-2">
+                        <PrismicLink field={item.linked_article} className="block mt-2">
                           <div className="text-xl font-semibold text-gray-900"><PrismicRichText field={item.linked_article.data.article_title} /></div>
                           <div className="mt-3 text-base text-gray-500"><PrismicRichText field={item.linked_article.data.article_excerpt} /></div>
                         </PrismicLink>

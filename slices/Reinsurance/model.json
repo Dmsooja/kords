@@ -1,0 +1,58 @@
+{
+  "id": "reinsurance",
+  "type": "SharedSlice",
+  "name": "Reinsurance",
+  "description": "Reinsurance",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Reinsurance",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        }
+      },
+      "items": {
+        "reinsurance_image": {
+          "type": "Image",
+          "config": {
+            "label": "Reinsurance Image",
+            "constraint": {
+              "width": 112,
+              "height": 96
+            },
+            "thumbnails": []
+          }
+        },
+        "reinsurance_label": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Reinsurance Label",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          }
+        },
+        "reinsurance_description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Reinsurance description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,hyperlink,em"
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}
