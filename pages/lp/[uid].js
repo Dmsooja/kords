@@ -1,10 +1,8 @@
-import { PrismicLink, PrismicImage, SliceZone, PrismicRichText } from "@prismicio/react";
+import { SliceZone } from "@prismicio/react";
 import { Layout } from "../../components/Layout";
 import { createClient, linkResolver } from '../../prismicio';
 import { components } from '../../slices/index';
-import { blogArticlesGraphQuery } from "../../queries";
 import * as prismicH from "@prismicio/helpers";
-import { PrismicNextImage } from "@prismicio/next";
 
 
 const __allComponents = { ...components }
@@ -44,8 +42,8 @@ export async function getStaticProps({ params, previewData, locale }) {
   return {
     props: {
       doc: page,
-      menu: menu,
-      footer: footer,
+      menu,
+      footer,
     },
   }
 }
@@ -64,6 +62,6 @@ export async function getStaticPaths() {
 
   return {
     paths: documents.map((doc) => prismicH.asLink(doc, linkResolver)),
-    fallback: true, // if a page has already been generated but doesn't show => display the cached page
+    fallback: false, // if a page has already been generated but doesn't show => display the cached page
   }
 }

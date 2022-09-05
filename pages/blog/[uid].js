@@ -10,14 +10,6 @@ const Page = ({ menu, doc, footer }) => {
 
       <div>
         {/* Heading */}
-        {/* <div className="mt-2 mb-2 block text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-          <PrismicRichText field={doc.data.article_title} />
-        </div>
-        <span className="mb-2 block text-center text-lg font-semibold text-indigo-600">
-          {doc.data.article_category}
-        </span> */}
-
-        {/* Image banner */}
         <section aria-labelledby="cause-heading">
           <div className="mb-6 relative bg-gray-800 py-32 px-6 sm:py-40 sm:px-12 lg:px-16">
             <div className="absolute inset-0 overflow-hidden">
@@ -60,16 +52,18 @@ export async function getStaticProps({ params, previewData, locale }) {
 
   // Query the page
   // const page = await client.getByUID("blog-article", params.uid);
-  const page = await client.getByUID("blog_article", params.uid, { lang: locale });
+  const page = await client.getByUID("blog_article", params.uid, { lang: locale }).catch(e => {
+    return null
+  });
 
   // Query the navigation
-  const menu = await client.getSingle("menu_main", { lang: locale });
+  const menu = await client.getSingle("menu_main", { lang: locale }).catch(e => {
+    return null
+  });
 
   const footer = (await client.getSingle("footer", { lang: locale }).catch(e => {
     return null
   }));
-
-  console.log(page);
 
   return {
     props: {
@@ -94,6 +88,6 @@ export async function getStaticPaths() {
 
   return {
     paths: documents.map((doc) => prismicH.asLink(doc, linkResolver)),
-    fallback: true, // if a page has already been generated but doesn't show => display the cached page
+    fallback: false, // if a page has already been generated but doesn't show => display the cached page
   }
 }

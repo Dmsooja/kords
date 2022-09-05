@@ -1,11 +1,3 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   reactStrictMode: true,
-//   swcMinify: true,
-// }
-
-// module.exports = nextConfig
-
 const prismic = require("@prismicio/client");
 
 const sm = require("./sm.json");
@@ -21,7 +13,11 @@ const nextConfig = async () => {
     i18n: {
       locales,
       defaultLocale: locales[0],
-},
+    },
+    images: {
+      loader: "imgix",
+      path: "",
+    },
   };
 };
 

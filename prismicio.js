@@ -6,8 +6,9 @@ import sm from './sm.json'
 /**
  * The project's Prismic repository name.
  */
-export const repositoryName = prismic.getRepositoryName(sm.apiEndpoint)
-
+ export const endpoint = sm.apiEndpoint;
+ export const repositoryName = prismic.getRepositoryName(endpoint);
+ 
 /**
  * The project's Prismic Link Resolver. This function determines the URL for a given Prismic document.
  *
@@ -17,19 +18,19 @@ export const repositoryName = prismic.getRepositoryName(sm.apiEndpoint)
 export function linkResolver(doc) {
   switch (doc.type) {
     case 'homepage':
-      return `/`
+      return `/${doc.lang}/`
     case 'blog':
-      return `/blog`
+      return `/${doc.lang}/blog`
     case 'blog_article':
-      return `/blog/${doc.uid}`
+      return `/${doc.lang}/blog/${doc.uid}`
     case 'landing_page':
-      return `/lp/${doc.uid}`
+      return `/${doc.lang}/lp/${doc.uid}`
     case 'about':
-      return `/about`
+      return `/${doc.lang}/about`
     case 'contact':
-      return `/contact`
+      return `/${doc.lang}/contact`
     case 'products':
-      return `/products`
+      return `/${doc.lang}/products`
     default:
       return null
   }
