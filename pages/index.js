@@ -20,13 +20,13 @@ export default function Home({ doc, menu, settings, footer }) {
 export async function getStaticProps({ previewData, locale }) {
   const client = createClient(previewData)
 
-  // const document = (await client.getSingle('homepage', { lang: locale }).catch(e => {
-  //   return null;
-  // }));
-
-  const document = (await client.getSingle('homepage', { "graphQuery": homeArticlesGraphQuery, lang: locale }).catch(e => {
+  const document = (await client.getSingle('homepage', { lang: locale }).catch(e => {
     return null;
   }));
+
+  // const document = (await client.getSingle('homepage', { "graphQuery": homeArticlesGraphQuery, lang: locale }).catch(e => {
+  //   return null;
+  // }));
   
   if (!document) {
     return {
@@ -34,30 +34,31 @@ export async function getStaticProps({ previewData, locale }) {
     }
   }
   
-  // const articlesData = (await client.getSingle('homepage', { "graphQuery": homeArticlesGraphQuery, lang: locale }).catch(e => {
-  //   return null;
-  // }));  
+  const articlesData = (await client.getSingle('homepage', { "graphQuery": homeArticlesGraphQuery, lang: locale }).catch(e => {
+    return null;
+  }));  
 
-  // let index=0
+  let index=0
 
-  // const docWithArticles = {
-  //   ...document,
-  //   data: {
-  //     ...document.data,
-  //     slices: document?.data?.slices?.map(slice => {
-  //       if (slice.slice_type === "withContentRelationship") {
-  //         index++
-  //         return {
-  //           ...articlesData?.data?.slices[index - 1]
-  //         }
-  //       }
-  //       debugger
-  //       return {
-  //         ...slice
-  //       }
-  //     })
-  //   }
-  // }
+  console.log(articlesData);
+
+  const docWithArticles = {
+    ...document,
+    data: {
+      ...document.data,
+      slices: document?.data?.slices?.map(slice => {
+        if (slice.slice_type === "featured_articles") {
+          index++
+          return {
+            ...articlesData?.data?.slices[index - 1]
+          }
+        }
+        return {
+          ...slice
+        }
+      })
+    }
+  }
 
 
   
@@ -73,8 +74,8 @@ export async function getStaticProps({ previewData, locale }) {
 
   return {
     props: {
-      // doc: docWithArticles,
-      doc: document,
+      doc: docWithArticles,
+      // doc: document,
       menu: menu,
       footer: footer,
     }, // will be passed to the page component as props
