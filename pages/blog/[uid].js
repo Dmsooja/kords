@@ -69,7 +69,7 @@ export async function getStaticProps({ params, previewData, locale }) {
     return null
   }));
 
-
+  console.log(page);
 
   return {
     props: {

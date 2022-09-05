@@ -40,7 +40,6 @@ export async function getStaticProps({ previewData, locale }) {
 
   let index=0
 
-  console.log(articlesData);
 
   const docWithArticles = {
     ...document,
