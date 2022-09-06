@@ -3,6 +3,7 @@
 import Accordion from './Accordion';
 import DemoSimpleHeading from './DemoSimpleHeading';
 import FeaturedArticles from './FeaturedArticles';
+import FeaturedProducts from './FeaturedProducts';
 import HeaderBanner from './HeaderBanner';
 import HeroSectionCard from './HeroSectionCard';
 import Image from './Image';
@@ -17,6 +18,7 @@ export {
 	Accordion,
 	DemoSimpleHeading,
 	FeaturedArticles,
+	FeaturedProducts,
 	HeaderBanner,
 	HeroSectionCard,
 	Image,
@@ -32,6 +34,7 @@ export const components = {
 	accordion: Accordion,
 	demo_simple_heading: DemoSimpleHeading,
 	featured_articles: FeaturedArticles,
+	featured_products: FeaturedProducts,
 	logo_cloud: HeaderBanner,
 	hero_section_card: HeroSectionCard,
 	image: Image,

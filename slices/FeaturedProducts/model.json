@@ -1,0 +1,26 @@
+{
+  "id": "featured_products",
+  "type": "SharedSlice",
+  "name": "FeaturedProducts",
+  "description": "FeaturedProducts",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "FeaturedProducts",
+      "primary": {},
+      "items": {
+        "product": {
+          "type": "IntegrationFields",
+          "config": {
+            "catalog": "kords--cimsirp_products",
+            "label": "Top Product"
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

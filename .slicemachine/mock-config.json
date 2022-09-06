@@ -17,7 +17,8 @@
     },
     "category": {},
     "product_page": {},
-    "landing_page": {}
+    "landing_page": {},
+    "author": {}
   },
   "slices": {
     "HeroSectionCard": {
@@ -281,6 +282,7 @@
           }
         }
       }
-    }
+    },
+    "FeaturedProducts": {}
   }
 }
