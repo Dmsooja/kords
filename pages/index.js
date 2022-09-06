@@ -24,21 +24,17 @@ export async function getStaticProps({ previewData, locale }) {
     return null;
   }));
 
-  // const document = (await client.getSingle('homepage', { "graphQuery": homeArticlesGraphQuery, lang: locale }).catch(e => {
-  //   return null;
-  // }));
-  
   if (!document) {
     return {
       notFound: true,
     }
   }
-  
+
   const articlesData = (await client.getSingle('homepage', { "graphQuery": homeArticlesGraphQuery, lang: locale }).catch(e => {
     return null;
-  }));  
+  }));
 
-  let index=0
+  let index = 0
 
 
   const docWithArticles = {
@@ -60,21 +56,20 @@ export async function getStaticProps({ previewData, locale }) {
   }
 
 
-  
+
   const menu = (await client.getSingle("menu_main", { lang: locale }).catch(e => {
     return null
   }));
-  
-  
+
+
   const footer = (await client.getSingle("footer", { lang: locale }).catch(e => {
     return null
   }));
-  
+
 
   return {
     props: {
       doc: docWithArticles,
-      // doc: document,
       menu: menu,
       footer: footer,
     }, // will be passed to the page component as props

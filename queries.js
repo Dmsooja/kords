@@ -27,18 +27,6 @@ export const blogArticlesGraphQuery =`
 {
 	blog {
 		slices {
-			...on logo_cloud {
-				variation {
-					...on default {
-						items {
-							...itemsFields
-						}
-						primary {
-							...primaryFields
-						}
-					}
-				}
-			}
 			...on featured_articles {
 				variation {
 					...on withContentRelationship {

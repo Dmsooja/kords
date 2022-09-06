@@ -18,7 +18,7 @@ const ArticleCard = ({ article }) => {
             document={article}
             linkResolver={linkResolver}
           >
-            {prismicH.isFilled.image(article.data.featured_image) && (
+            {prismicH.isFilled.image(article?.data?.featured_image) && (
               <PrismicNextImage
                 field={article.data.featured_image}
                 layout="fill"
@@ -34,11 +34,11 @@ const ArticleCard = ({ article }) => {
           linkResolver={linkResolver}
         >
           <div className="text-lg font-bold">
-            <PrismicRichText field={article.data.article_title} />
+            <PrismicRichText field={article?.data?.article_title} />
           </div>
         </PrismicLink>
         <div className="mt-1 text-gray-500">
-          <PrismicRichText field={article.data.article_excerpt} />
+          <PrismicRichText field={article?.data?.article_excerpt} />
         </div>
       </div>
     </div>
@@ -51,7 +51,7 @@ export default function Blog({ doc, menu, footer, articles }) {
       <Layout altLangs={doc.alternate_languages} menu={menu} footer={footer}>
         <SliceZone slices={doc.data.slices} components={__allComponents} />
         <h2>Our latest articles</h2>
-        <ul role="list" className="bg-white shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+        <ul role="list" id="all-articles" className="bg-white shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
           {articles?.map((article, idx) => {
             return (
               <li key={idx} className="border-b border-gray-200 py-4">
@@ -68,9 +68,34 @@ export default function Blog({ doc, menu, footer, articles }) {
 export async function getStaticProps({ previewData, locale }) {
   const client = createClient(previewData)
 
-  const document = (await client.getSingle('blog', { "graphQuery": blogArticlesGraphQuery, lang: locale }).catch(e => {
+  const document = (await client.getSingle('blog', { lang: locale }).catch(e => {
     return null;
   }));
+
+  const articlesData = (await client.getSingle('blog', { "graphQuery": blogArticlesGraphQuery, lang: locale }).catch(e => {
+    return null;
+  }));
+
+  let index=0
+
+
+  const docWithArticles = {
+    ...document,
+    data: {
+      ...document.data,
+      slices: document?.data?.slices?.map(slice => {
+        if (slice.slice_type === "featured_articles") {
+          index++
+          return {
+            ...articlesData?.data?.slices[index - 1]
+          }
+        }
+        return {
+          ...slice
+        }
+      })
+    }
+  }
 
   const articles = await client.getAllByType("blog_article").catch(e => {
     return null
@@ -93,10 +118,10 @@ export async function getStaticProps({ previewData, locale }) {
 
   return {
     props: {
-      doc: document,
-      articles: articles,
-      menu: menu,
-      footer: footer,
+      doc: docWithArticles,
+      articles,
+      menu,
+      footer,
     }, // will be passed to the page component as props
   }
 }

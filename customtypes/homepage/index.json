@@ -37,6 +37,9 @@
             },
             "nouha_heading": {
               "type": "SharedSlice"
+            },
+            "featured_products": {
+              "type": "SharedSlice"
             }
           }
         }
