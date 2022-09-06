@@ -13,19 +13,37 @@
   "data": {
     "name": [
       {
-        "type": "paragraph",
-        "text": "Laborum irure quis officia non nulla voluptate sunt laboris cillum culpa est voluptate. Eu cillum exercitation et sunt ea et dolore cupidatat eu.",
+        "type": "heading1",
+        "text": "Raise",
         "spans": []
       }
     ],
     "image": {
       "dimensions": {
-        "width": 900,
-        "height": 500
+        "width": 300,
+        "height": 300
       },
       "alt": null,
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0"
+      "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117",
+      "thumbnail": {
+        "dimensions": {
+          "width": 40,
+          "height": 40
+        },
+        "alt": null,
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e"
+      },
+      "medium": {
+        "dimensions": {
+          "width": 100,
+          "height": 100
+        },
+        "alt": null,
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea"
+      }
     },
     "slices": []
   }
