@@ -43,9 +43,6 @@
             },
             "demo_heading_michel": {
               "type": "SharedSlice"
-            },
-            "dianka_demo_heading": {
-              "type": "SharedSlice"
             }
           }
         }
