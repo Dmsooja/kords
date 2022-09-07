@@ -99,6 +99,70 @@
           }
         }
       },
+      "demo_heading_michel": {
+        "library": "slices",
+        "id": "demo_heading_michel",
+        "name": "DemoHeadingMichel",
+        "description": "DemoHeadingMichel",
+        "model": {
+          "id": "demo_heading_michel",
+          "type": "SharedSlice",
+          "name": "DemoHeadingMichel",
+          "description": "DemoHeadingMichel",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "DemoHeadingMichel",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Section heading title",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Bridge",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "demo_heading_michel"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/DemoHeadingMichel/default/preview.png",
+            "width": 800,
+            "height": 45
+          }
+        }
+      },
       "demo_simple_heading": {
         "library": "slices",
         "id": "demo_simple_heading",

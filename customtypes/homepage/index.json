@@ -40,6 +40,9 @@
             },
             "featured_products": {
               "type": "SharedSlice"
+            },
+            "demo_heading_michel": {
+              "type": "SharedSlice"
             }
           }
         }

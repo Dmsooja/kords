@@ -121,6 +121,9 @@
             },
             "demo_simple_heading": {
               "type": "SharedSlice"
+            },
+            "demo_heading_michel": {
+              "type": "SharedSlice"
             }
           }
         }
