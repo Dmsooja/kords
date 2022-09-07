@@ -3,6 +3,7 @@
 import Accordion from './Accordion';
 import DemoHeadingMichel from './DemoHeadingMichel';
 import DemoSimpleHeading from './DemoSimpleHeading';
+import DiankaDemoHeading from './DiankaDemoHeading';
 import FeaturedArticles from './FeaturedArticles';
 import FeaturedProducts from './FeaturedProducts';
 import HeaderBanner from './HeaderBanner';
@@ -19,6 +20,7 @@ export {
 	Accordion,
 	DemoHeadingMichel,
 	DemoSimpleHeading,
+	DiankaDemoHeading,
 	FeaturedArticles,
 	FeaturedProducts,
 	HeaderBanner,
@@ -36,6 +38,7 @@ export const components = {
 	accordion: Accordion,
 	demo_heading_michel: DemoHeadingMichel,
 	demo_simple_heading: DemoSimpleHeading,
+	dianka_demo_heading: DiankaDemoHeading,
 	featured_articles: FeaturedArticles,
 	featured_products: FeaturedProducts,
 	logo_cloud: HeaderBanner,

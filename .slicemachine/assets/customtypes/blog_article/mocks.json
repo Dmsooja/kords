@@ -14,11 +14,11 @@
     "article_title": [
       {
         "type": "heading2",
-        "text": "Anyone",
+        "text": "Stove",
         "spans": []
       }
     ],
-    "article_category": "Guides",
+    "article_category": "Tests",
     "featured_image": {
       "dimensions": {
         "width": 1920,
@@ -26,25 +26,25 @@
       },
       "alt": null,
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+      "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2"
     },
     "article_excerpt": [
       {
         "type": "paragraph",
-        "text": "Enim adipisicing laboris officia cillum incididunt exercitation cupidatat incididunt. Est esse mollit ut commodo ex culpa minim ad ea anim nostrud tempor cillum reprehenderit. Consequat officia in adipisicing sunt non ea culpa dolore magna sunt aliqua.",
+        "text": "Do sit consectetur veniam. Nulla duis minim quis eiusmod eiusmod.",
         "spans": []
       }
     ],
     "article_author_name": [
       {
         "type": "paragraph",
-        "text": "Consequat et et qui qui aliquip.",
+        "text": "Irure Lorem aute ut magna culpa occaecat ipsum.",
         "spans": []
       }
     ],
     "article_author_link": {
       "link_type": "Web",
-      "url": "http://twitter.com"
+      "url": "https://slicemachine.dev"
     },
     "article_author_image": {
       "dimensions": {
@@ -53,11 +53,11 @@
       },
       "alt": null,
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea"
+      "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853"
     },
-    "article_reading_time": 74,
-    "article_publishing_date": "2016-09-07",
-    "article_update_timestamp": "2014-09-16T23:21:08+0000",
+    "article_reading_time": 24,
+    "article_publishing_date": "2012-11-07",
+    "article_update_timestamp": "2013-05-16T22:24:49+0000",
     "slices": []
   }
 }

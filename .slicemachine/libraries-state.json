@@ -285,6 +285,70 @@
           }
         }
       },
+      "dianka_demo_heading": {
+        "library": "slices",
+        "id": "dianka_demo_heading",
+        "name": "DiankaDemoHeading",
+        "description": "DiankaDemoHeading",
+        "model": {
+          "id": "dianka_demo_heading",
+          "type": "SharedSlice",
+          "name": "DiankaDemoHeading",
+          "description": "DiankaDemoHeading",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "DiankaDemoHeading",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Section Heading Title",
+                    "allowTargetBlank": true,
+                    "single": "heading3"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading3",
+                  "text": "Accurate",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "dianka_demo_heading"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/DiankaDemoHeading/default/preview.png",
+            "width": 800,
+            "height": 45
+          }
+        }
+      },
       "featured_articles": {
         "library": "slices",
         "id": "featured_articles",
