@@ -25,7 +25,8 @@
           "blocks": 1
         }
       }
-    }
+    },
+    "about": {}
   },
   "slices": {
     "HeroSectionCard": {

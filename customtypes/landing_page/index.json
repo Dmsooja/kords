@@ -23,9 +23,6 @@
             "accordion": {
               "type": "SharedSlice"
             },
-            "menu": {
-              "type": "SharedSlice"
-            },
             "reinsurance": {
               "type": "SharedSlice"
             }

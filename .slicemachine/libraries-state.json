@@ -565,7 +565,7 @@
                 "product": {
                   "type": "IntegrationFields",
                   "config": {
-                    "catalog": "kords--cimsirp_products",
+                    "catalog": "kords--kords_products",
                     "label": "Top Product"
                   }
                 }
