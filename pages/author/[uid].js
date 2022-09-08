@@ -1,10 +1,10 @@
 import { SliceZone } from "@prismicio/react";
-import { Layout } from "../components/Layout";
-import { createClient, linkResolver } from '../prismicio';
-import { components } from '../slices/index';
-import { authorArticlesGraphQuery } from "../queries";
+import { Layout } from "../../components/Layout";
+import { createClient, linkResolver } from '../../prismicio';
+import { components } from '../../slices/index';
+import { authorArticlesGraphQuery } from "../../queries";
 import * as prismicH from "@prismicio/helpers";
-import { Content, Header } from "../components/Blog/AuthorsLayout";
+import { Content, Header } from "../../components/Blog/AuthorsLayout";
 
 
 const __allComponents = { ...components }
@@ -22,10 +22,10 @@ export default function Author({ doc, menu, footer, articles }) {
     )
 }
 
-export async function getStaticProps({ previewData, locale }) {
+export async function getStaticProps({ params, previewData, locale }) {
     const client = createClient(previewData)
 
-    const document = (await client.getSingle('author', { lang: locale }).catch(e => {
+    const document = (await client.getSingle('author', params.uid, { lang: locale }).catch(e => {
         return null;
     }));
 
@@ -82,3 +82,13 @@ export async function getStaticProps({ previewData, locale }) {
         }
     }
 }
+
+export async function getStaticPaths() {
+    const client = createClient()
+    const documents = await client.getAllByType('author', { lang: '*' })
+  
+    return {
+      paths: documents.map((doc) => prismicH.asLink(doc, linkResolver)),
+      fallback: false, // if a page has already been generated but doesn't show => display the cached page
+    }
+  }
