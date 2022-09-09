@@ -5,5 +5,5 @@ export default {
 }
 
 
-export const _Default = () => <MyComponent slice={{"variation":"default","version":"sktwi1xtmkfgx8626","items":[{}],"primary":{},"slice_type":"cta_section","id":"_Default"}} />
+export const _Default = () => <MyComponent slice={{"variation":"default","version":"sktwi1xtmkfgx8626","items":[{"button_label":"Click here","button_url":{"link_type":"Web","url":"http://google.com"}}],"primary":{"headline":[{"type":"heading2","text":"Catch","spans":[]}],"title":[{"type":"heading3","text":"Safety","spans":[]}],"description":[{"type":"paragraph","text":"Consectetur enim eu deserunt id elit reprehenderit dolor nostrud aute nulla esse eu velit consectetur.","spans":[]}],"image":{"dimensions":{"width":648,"height":410},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1514880448122-7e417213b996"}},"slice_type":"cta_section","id":"_Default"}} />
 _Default.storyName = ''
