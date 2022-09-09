@@ -235,36 +235,6 @@
         }
       }
     },
-    "DemoSimpleHeading": {
-      "default": {
-        "primary": {
-          "title": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          }
-        }
-      }
-    },
-    "NouhaHeading": {
-      "default": {
-        "primary": {
-          "title": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          },
-          "description": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          }
-        }
-      }
-    },
     "Reinsurance": {
       "default": {
         "items": {
@@ -291,7 +261,18 @@
         }
       }
     },
-    "FeaturedProducts": {},
+    "FeaturedProducts": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
     "CtaSection": {
       "default": {
         "items": {

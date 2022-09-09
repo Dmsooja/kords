@@ -32,13 +32,10 @@
             "logo_cloud": {
               "type": "SharedSlice"
             },
-            "demo_simple_heading": {
-              "type": "SharedSlice"
-            },
-            "nouha_heading": {
-              "type": "SharedSlice"
-            },
             "featured_products": {
+              "type": "SharedSlice"
+            },
+            "cta_section": {
               "type": "SharedSlice"
             }
           }

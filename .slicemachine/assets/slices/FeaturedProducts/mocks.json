@@ -3,9 +3,19 @@
     "variation": "default",
     "version": "sktwi1xtmkfgx8626",
     "items": [
-      {}
+      {
+        "product": null
+      }
     ],
-    "primary": {},
+    "primary": {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Deeply",
+          "spans": []
+        }
+      ]
+    },
     "slice_type": "featured_products"
   }
 ]

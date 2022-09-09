@@ -10,7 +10,17 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "FeaturedProducts",
-      "primary": {},
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        }
+      },
       "items": {
         "product": {
           "type": "IntegrationFields",

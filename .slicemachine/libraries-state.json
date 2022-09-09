@@ -237,128 +237,6 @@
           }
         }
       },
-      "demo_simple_heading": {
-        "library": "slices",
-        "id": "demo_simple_heading",
-        "name": "DemoSimpleHeading",
-        "description": "DemoSimpleHeading",
-        "model": {
-          "id": "demo_simple_heading",
-          "type": "SharedSlice",
-          "name": "DemoSimpleHeading",
-          "description": "DemoSimpleHeading",
-          "variations": [
-            {
-              "id": "default",
-              "name": "Default",
-              "docURL": "...",
-              "version": "sktwi1xtmkfgx8626",
-              "description": "DemoSimpleHeading",
-              "primary": {
-                "title": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Title",
-                    "placeholder": "This is where it all begins...",
-                    "allowTargetBlank": true,
-                    "single": "heading3"
-                  }
-                }
-              },
-              "items": {},
-              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-            },
-            {
-              "id": "withdescription",
-              "name": "withdescription",
-              "docURL": "...",
-              "version": "sktwi1xtmkfgx8626",
-              "description": "DemoSimpleHeading",
-              "primary": {
-                "title": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Title",
-                    "placeholder": "This is where it all begins...",
-                    "allowTargetBlank": true,
-                    "single": "heading3"
-                  }
-                },
-                "description": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Description",
-                    "placeholder": "",
-                    "allowTargetBlank": true,
-                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-                  }
-                }
-              },
-              "items": {},
-              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-            }
-          ]
-        },
-        "mocks": {
-          "default": {
-            "variation": "default",
-            "version": "sktwi1xtmkfgx8626",
-            "items": [
-              {}
-            ],
-            "primary": {
-              "title": [
-                {
-                  "type": "heading3",
-                  "text": "Instrument",
-                  "spans": []
-                }
-              ]
-            },
-            "slice_type": "demo_simple_heading"
-          },
-          "withdescription": {
-            "variation": "withdescription",
-            "version": "sktwi1xtmkfgx8626",
-            "items": [
-              {}
-            ],
-            "primary": {
-              "title": [
-                {
-                  "type": "heading3",
-                  "text": "Except",
-                  "spans": []
-                }
-              ],
-              "description": [
-                {
-                  "type": "paragraph",
-                  "text": "Id laborum officia laboris.",
-                  "spans": []
-                }
-              ]
-            },
-            "slice_type": "demo_simple_heading"
-          }
-        },
-        "meta": {
-          "fileName": "index",
-          "extension": "js"
-        },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/DemoSimpleHeading/default/preview.png",
-            "width": 800,
-            "height": 45
-          },
-          "withdescription": {
-            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/DemoSimpleHeading/withdescription/preview.png",
-            "width": 800,
-            "height": 65
-          }
-        }
-      },
       "featured_articles": {
         "library": "slices",
         "id": "featured_articles",
@@ -698,7 +576,17 @@
               "docURL": "...",
               "version": "sktwi1xtmkfgx8626",
               "description": "FeaturedProducts",
-              "primary": {},
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                }
+              },
               "items": {
                 "product": {
                   "type": "IntegrationFields",
@@ -717,9 +605,19 @@
             "variation": "default",
             "version": "sktwi1xtmkfgx8626",
             "items": [
-              {}
+              {
+                "product": null
+              }
             ],
-            "primary": {},
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Deeply",
+                  "spans": []
+                }
+              ]
+            },
             "slice_type": "featured_products"
           }
         },
@@ -727,7 +625,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/dianka/Documents/Demos/kords/slices/FeaturedProducts/default/preview.png",
+            "width": 2568,
+            "height": 1462
+          }
+        }
       },
       "logo_cloud": {
         "library": "slices",
@@ -1340,86 +1244,6 @@
             "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/Menu/dropdownMenu/preview.png",
             "width": 800,
             "height": 48
-          }
-        }
-      },
-      "nouha_heading": {
-        "library": "slices",
-        "id": "nouha_heading",
-        "name": "NouhaHeading",
-        "description": "NouhaHeading",
-        "model": {
-          "id": "nouha_heading",
-          "type": "SharedSlice",
-          "name": "NouhaHeading",
-          "description": "NouhaHeading",
-          "variations": [
-            {
-              "id": "default",
-              "name": "Default",
-              "docURL": "...",
-              "version": "sktwi1xtmkfgx8626",
-              "description": "NouhaHeading",
-              "primary": {
-                "title": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Title",
-                    "placeholder": "Title here",
-                    "allowTargetBlank": true,
-                    "single": "heading3"
-                  }
-                },
-                "description": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Description",
-                    "placeholder": "",
-                    "allowTargetBlank": true,
-                    "single": "paragraph"
-                  }
-                }
-              },
-              "items": {},
-              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-            }
-          ]
-        },
-        "mocks": {
-          "default": {
-            "variation": "default",
-            "version": "sktwi1xtmkfgx8626",
-            "items": [
-              {}
-            ],
-            "primary": {
-              "title": [
-                {
-                  "type": "heading3",
-                  "text": "Goose",
-                  "spans": []
-                }
-              ],
-              "description": [
-                {
-                  "type": "paragraph",
-                  "text": "Aute pariatur sint pariatur fugiat eiusmod fugiat velit exercitation do occaecat consequat aliqua. Incididunt velit ullamco velit consectetur exercitation nulla minim.",
-                  "spans": []
-                }
-              ]
-            },
-            "slice_type": "nouha_heading"
-          }
-        },
-        "meta": {
-          "fileName": "index",
-          "extension": "js"
-        },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/dianka/Documents/Demos/kords/slices/NouhaHeading/default/preview.png",
-            "width": 736,
-            "height": 181
           }
         }
       },

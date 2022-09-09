@@ -2,14 +2,12 @@
 
 import Accordion from './Accordion';
 import CtaSection from './CtaSection';
-import DemoSimpleHeading from './DemoSimpleHeading';
 import FeaturedArticles from './FeaturedArticles';
 import FeaturedProducts from './FeaturedProducts';
 import HeaderBanner from './HeaderBanner';
 import HeroSectionCard from './HeroSectionCard';
 import Image from './Image';
 import Menu from './Menu';
-import NouhaHeading from './NouhaHeading';
 import Reinsurance from './Reinsurance';
 import ScrollingCards from './ScrollingCards';
 import Text from './Text';
@@ -18,14 +16,12 @@ import TopPromotionBanner from './TopPromotionBanner';
 export {
 	Accordion,
 	CtaSection,
-	DemoSimpleHeading,
 	FeaturedArticles,
 	FeaturedProducts,
 	HeaderBanner,
 	HeroSectionCard,
 	Image,
 	Menu,
-	NouhaHeading,
 	Reinsurance,
 	ScrollingCards,
 	Text,
@@ -35,14 +31,12 @@ export {
 export const components = {
 	accordion: Accordion,
 	cta_section: CtaSection,
-	demo_simple_heading: DemoSimpleHeading,
 	featured_articles: FeaturedArticles,
 	featured_products: FeaturedProducts,
 	logo_cloud: HeaderBanner,
 	hero_section_card: HeroSectionCard,
 	image: Image,
 	menu: Menu,
-	nouha_heading: NouhaHeading,
 	reinsurance: Reinsurance,
 	scrolling_cards: ScrollingCards,
 	text: Text,
