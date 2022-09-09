@@ -13,7 +13,7 @@ export const Layout = ({ children, menu, footer, altLangs }) => {
           <Header menu={menu} altLangs={altLangs} />
           : null
         }
-        <main className="my-10">
+        <main className="mb-10">
           {children}
         </main>
       </div>
