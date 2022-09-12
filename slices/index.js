@@ -12,6 +12,7 @@ import Reinsurance from './Reinsurance';
 import ScrollingCards from './ScrollingCards';
 import Text from './Text';
 import TopPromotionBanner from './TopPromotionBanner';
+import YoutubeVideo from './YoutubeVideo';
 
 export {
 	Accordion,
@@ -26,6 +27,7 @@ export {
 	ScrollingCards,
 	Text,
 	TopPromotionBanner,
+	YoutubeVideo,
 };
 
 export const components = {
@@ -41,4 +43,5 @@ export const components = {
 	scrolling_cards: ScrollingCards,
 	text: Text,
 	top_promotion_banner: TopPromotionBanner,
+	youtube_video: YoutubeVideo,
 };
