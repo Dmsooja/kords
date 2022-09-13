@@ -12,7 +12,7 @@ export const Header = ({ menu, altLangs }) => (
         <img src={menu?.data?.logo?.url} alt={menu?.data?.logo.alt} />
       </PrismicLink>
       <nav className="flex-grow">
-        <ul className="-ml-5 -mt-5 flex justify-end">
+        <ul className="-ml-5 flex justify-end">
           <SliceZone slices={menu?.data?.slices} components={__allComponents} />
           <LanguageSwitcher altLangs={altLangs} />
         </ul>
