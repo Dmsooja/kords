@@ -20,7 +20,7 @@ const Page = ({ menu, doc, footer }) => {
             </div>
             <div aria-hidden="true" className="absolute inset-0 bg-gray-900 bg-opacity-50" />
             <div className="relative mx-auto flex max-w-3xl flex-col items-center text-center">
-              <span className="mb-2 block text-center text-lg font-semibold text-indigo-600">
+              <span className="mb-2 block text-center text-lg font-semibold text-white">
                 {doc.data.article_category}
               </span>
               <div id="cause-heading" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">

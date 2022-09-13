@@ -50,16 +50,27 @@ export default function Blog({ doc, menu, footer, articles }) {
     <div>
       <Layout altLangs={doc.alternate_languages} menu={menu} footer={footer}>
         <SliceZone slices={doc.data.slices} components={__allComponents} />
-        <h2>Our latest articles</h2>
-        <ul role="list" id="all-articles" className="bg-white shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-          {articles?.map((article, idx) => {
-            return (
-              <li key={idx} className="border-b border-gray-200 py-4">
-                <ArticleCard article={article} />
-              </li>
-            )
-          })}
-        </ul>
+        <div className="my-10">
+          <div className="text-center text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+            <h2>Our latest articles</h2>
+          </div>
+          <ul
+            role="list"
+            id="all-articles"
+            className="overflow-hidden px-4 py-4"
+          >
+            {articles?.map((article, idx) => {
+              return (
+                <li
+                  key={idx}
+                  className="shadow max-w-7xl mt-10 mx-auto py-6 bg-white sm:px-6 sm:rounded-md"
+                >
+                  <ArticleCard article={article} />
+                </li>
+              )
+            })}
+          </ul>
+        </div>
       </Layout>
     </div>
   )
