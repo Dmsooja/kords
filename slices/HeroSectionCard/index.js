@@ -14,7 +14,7 @@ const HeroSectionCard = ({ slice }) => (
               src={slice.primary.background_image.url}
               alt={slice.primary.background_image.alt}
             />
-            <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
+            <div className="absolute inset-0 bg-indigo-300 mix-blend-multiply" />
           </div>
           <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
             <div className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
