@@ -33,7 +33,10 @@
           "type": "Image",
           "config": {
             "label": "Image",
-            "constraint": {},
+            "constraint": {
+              "width": 1920,
+              "height": 316
+            },
             "thumbnails": []
           }
         }

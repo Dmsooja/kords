@@ -673,7 +673,10 @@
                   "type": "Image",
                   "config": {
                     "label": "Image",
-                    "constraint": {},
+                    "constraint": {
+                      "width": 1920,
+                      "height": 316
+                    },
                     "thumbnails": []
                   }
                 }
@@ -731,25 +734,25 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Alive",
+                  "text": "Graph",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Cillum excepteur nisi velit occaecat consectetur excepteur reprehenderit ut veniam id nulla ex mollit incididunt. Duis irure nisi sit nulla sint ex. Cupidatat ad magna exercitation nisi culpa qui.",
+                  "text": "Magna veniam duis consectetur sit ut labore duis ea. Deserunt fugiat elit labore enim id aliqua labore occaecat mollit.",
                   "spans": []
                 }
               ],
               "image": {
                 "dimensions": {
-                  "width": 900,
-                  "height": 500
+                  "width": 1920,
+                  "height": 316
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613"
+                "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88"
               }
             },
             "slice_type": "logo_cloud"
@@ -764,14 +767,14 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Doing",
+                  "text": "Develop",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Quis culpa eiusmod est eu id et est qui commodo velit laborum.",
+                  "text": "Mollit do ex cupidatat irure ad nisi pariatur. Est nisi sit pariatur eiusmod minim.",
                   "spans": []
                 }
               ],
@@ -782,7 +785,7 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468"
+                "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89"
               }
             },
             "slice_type": "logo_cloud"
@@ -801,7 +804,7 @@
           "headerWithDescription": {
             "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/HeaderBanner/headerWithDescription/preview.png",
             "width": 800,
-            "height": 356
+            "height": 412
           }
         }
       },
@@ -1823,7 +1826,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/YoutubeVideo/default/preview.png",
+            "width": 800,
+            "height": 205
+          }
+        }
       }
     }
   }
