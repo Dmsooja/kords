@@ -53,32 +53,14 @@
           "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
-      "article_author_name": {
-        "type": "StructuredText",
-        "config": {
-          "label": "Article Author Name",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-        }
-      },
-      "article_author_link": {
+      "author": {
         "type": "Link",
         "config": {
-          "label": "Article Author Link",
-          "placeholder": "",
-          "select": null
-        }
-      },
-      "article_author_image": {
-        "type": "Image",
-        "config": {
-          "label": "Article Author Image",
-          "constraint": {
-            "width": 40,
-            "height": 40
-          },
-          "thumbnails": []
+          "label": "Author",
+          "select": "document",
+          "customtypes": [
+            "author"
+          ]
         }
       },
       "article_reading_time": {
@@ -117,6 +99,9 @@
               "type": "SharedSlice"
             },
             "scrolling_cards": {
+              "type": "SharedSlice"
+            },
+            "featured_products": {
               "type": "SharedSlice"
             }
           }

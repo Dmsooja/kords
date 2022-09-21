@@ -1,22 +1,23 @@
-import { SliceZone } from "@prismicio/react";
-import { Layout } from "../../components/Layout";
+import { PrismicRichText, SliceZone } from "@prismicio/react";
+import * as prismic from '@prismicio/client'
+import * as prismicH from "@prismicio/helpers";
 import { createClient, linkResolver } from '../../prismicio';
 import { components } from '../../slices/index';
 import { authorArticlesGraphQuery } from "../../queries";
-import * as prismicH from "@prismicio/helpers";
+import { Layout } from "../../components/Layout";
 import { Content, Header } from "../../components/Blog/AuthorsLayout";
 
 
 const __allComponents = { ...components }
 
-export default function Author({ doc, menu, footer, articles }) {
+export default function Author({ doc, menu, footer }) {
     return (
         <div>
             <Layout altLangs={doc.alternate_languages} menu={menu} footer={footer}>
                 {/* Author presentation */}
                 <Header data={doc.data} />
                 <SliceZone slices={doc.data.slices} components={__allComponents} />
-                <Content data={doc.data} />
+                {/* <Content data={doc.data} /> */}
             </Layout>
         </div>
     )
@@ -25,13 +26,15 @@ export default function Author({ doc, menu, footer, articles }) {
 export async function getStaticProps({ params, previewData, locale }) {
     const client = createClient(previewData)
 
-    const document = (await client.getSingle('author', params.uid, { lang: locale }).catch(e => {
+    const document = (await client.getByUID('author', params.uid, { lang: locale }).catch(e => {
         return null;
     }));
 
-    const articlesData = (await client.getSingle('author', { "graphQuery": authorArticlesGraphQuery, lang: locale }).catch(e => {
+
+    const articlesData = (await client.getByUID('author', params.uid, { "graphQuery": authorArticlesGraphQuery, lang: locale }).catch(e => {
         return null;
     }));
+
 
     let index = 0
 
@@ -73,6 +76,8 @@ export async function getStaticProps({ params, previewData, locale }) {
         }
     }
 
+
+
     return {
         props: {
             doc: docWithArticles,
@@ -82,6 +87,20 @@ export async function getStaticProps({ params, previewData, locale }) {
         }
     }
 }
+
+const endpoint = prismic.getEndpoint('kords')
+const client = prismic.createClient(endpoint)
+
+const init = async () => {
+  client.get({
+    predicates: [
+      prismic.predicate.at('document.id', doc.id),
+    //   prismic.predicate.has('my.blog_article.article_author_name', `${doc.data.name}`),
+    ],
+  })
+}
+
+init();
 
 export async function getStaticPaths() {
     const client = createClient()

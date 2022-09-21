@@ -31,7 +31,7 @@
           },
           "thumbnails": [
             {
-              "name": "thumbnail",
+              "name": "featured article",
               "width": 40,
               "height": 40
             },
@@ -39,6 +39,16 @@
               "name": "medium",
               "width": 100,
               "height": 100
+            },
+            {
+              "name": "author page header",
+              "width": 720,
+              "height": 608
+            },
+            {
+              "name": "article",
+              "width": 68,
+              "height": 68
             }
           ]
         }
@@ -48,12 +58,6 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "text": {
-              "type": "SharedSlice"
-            },
-            "image": {
-              "type": "SharedSlice"
-            },
             "logo_cloud": {
               "type": "SharedSlice"
             },

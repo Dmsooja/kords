@@ -1,17 +1,19 @@
-import { PrismicRichText, SliceZone } from "@prismicio/react";
+import { PrismicRichText, PrismicLink, SliceZone } from "@prismicio/react";
 import { createClient, linkResolver } from '../../prismicio'
 import * as prismicH from '@prismicio/helpers';
 import { components } from "../../slices";
 import { Layout } from "../../components/Layout";
+import { authorGraphQuery } from "../../queries";
+
+const dateOptions = { year: 'numeric', month: 'short', day: 'numeric' };
 
 const Page = ({ menu, doc, footer }) => {
   return (
     <Layout menu={menu} footer={footer} altLangs={doc?.alternate_languages}>
-
       <div>
         {/* Heading */}
         <section aria-labelledby="cause-heading">
-          <div className="mb-6 relative bg-gray-800 py-32 px-6 sm:py-40 sm:px-12 lg:px-16">
+          <div className="relative bg-gray-800 py-32 px-6 sm:py-40 sm:px-12 lg:px-16">
             <div className="absolute inset-0 overflow-hidden">
               <img
                 src={doc.data.featured_image.url} alt={doc.data.featured_image.alt}
@@ -31,10 +33,41 @@ const Page = ({ menu, doc, footer }) => {
               </div>
             </div>
           </div>
+          {/* Author */}
+          <div className="md:flex md:items-center md:justify-between md:space-x-5 mb-6 px-6 sm:px-4 md:px-6 lg:px-8 relative bg-white py-2 px-6 sm:py-4 max-w-7xl mx-auto border-b border-neutral-200">
+            <div className="flex items-start space-x-5">
+              <div className="flex-shrink-0">
+                <div className="relative">
+                  <img
+                    className="h-16 w-16 rounded-full"
+                    src={doc.data.author.data.image.url}
+                    alt={doc.data.author.data.image.alt}
+                  />
+                  <span className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true" />
+                </div>
+              </div>
+              <div className="pt-1.5">
+                <div className="text-2xl font-bold text-gray-900">
+                  <PrismicLink field={doc.data.author} className="hover:underline">
+                    <PrismicRichText field={doc.data.author.data.name} />
+                  </PrismicLink>
+                </div>
+                <div className="text-sm font-medium text-gray-500">
+                  <time dateTime={doc.data.article_publishing_date}>
+                    {new Date(doc.data.article_update_timestamp).toLocaleDateString(doc.lang, dateOptions)}
+                  </time>
+                </div>
+              </div>
+            </div>
+            <div className="justify-stretch mt-6 flex flex-col-reverse space-y-4 space-y-reverse sm:flex-row-reverse sm:justify-end sm:space-y-0 sm:space-x-3 sm:space-x-reverse md:mt-0 md:flex-row md:space-x-3">
+              {doc.data.article_reading_time} min
+            </div>
+          </div>
         </section>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* <div className="max-w-7xl mx-auto px-10 sm:px-12 lg:px-16"> */}
           <SliceZone slices={doc.data.slices} components={components} />
-        </div>
+        {/* </div> */}
       </div>
     </Layout>
   );
@@ -50,8 +83,8 @@ export default Page;
 export async function getStaticProps({ params, previewData, locale }) {
   const client = createClient({ previewData });
 
-  // Query the page
-  const page = await client.getByUID("blog_article", params.uid, { lang: locale }).catch(e => {
+  // Query the page & author
+  const page = await client.getByUID("blog_article", params.uid, {"graphQuery": authorGraphQuery, lang: locale }).catch(e => {
     return null
   });
 
@@ -68,7 +101,7 @@ export async function getStaticProps({ params, previewData, locale }) {
     props: {
       menu,
       footer,
-      doc: page
+      doc: page,
     },
   };
 }
