@@ -37,7 +37,13 @@
               "width": 1152,
               "height": 458
             },
-            "thumbnails": []
+            "thumbnails": [
+              {
+                "name": "medium",
+                "width": 576,
+                "height": 229
+              }
+            ]
           }
         }
       },

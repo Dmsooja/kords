@@ -16,14 +16,14 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Period",
+          "text": "Continent",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Mollit dolore exercitation minim pariatur do dolore proident. Labore velit ullamco non veniam culpa nisi dolore eu velit occaecat mollit ut consequat consequat. Cupidatat do eiusmod ad nostrud sunt aute do pariatur velit.",
+          "text": "Magna exercitation sit veniam duis eu exercitation sunt cupidatat elit ex sit ullamco.",
           "spans": []
         }
       ],
@@ -34,7 +34,16 @@
         },
         "alt": null,
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6"
+        "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+        "medium": {
+          "dimensions": {
+            "width": 576,
+            "height": 229
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118"
+        }
       }
     },
     "slice_type": "hero_section_card"
@@ -49,14 +58,14 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Motor",
+          "text": "Claws",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Aute qui magna nisi velit sunt id. Eiusmod sit commodo elit nulla esse eiusmod reprehenderit.",
+          "text": "Culpa minim enim duis dolore cillum esse adipisicing quis aliqua reprehenderit non. Ullamco sint tempor eiusmod velit dolore. Irure Lorem occaecat ex culpa ullamco velit exercitation consectetur do est irure ea esse in.",
           "spans": []
         }
       ],
@@ -67,7 +76,7 @@
         },
         "alt": null,
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468"
+        "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9"
       }
     },
     "slice_type": "hero_section_card"
