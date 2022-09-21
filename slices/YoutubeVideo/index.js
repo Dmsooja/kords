@@ -10,7 +10,7 @@ const YoutubeVideo = ({ slice }) => (
         <PrismicRichText field={slice.primary.title} />
       </div>
       <div
-        className='w-300-px'
+        className='w-300-px video'
         dangerouslySetInnerHTML={{ __html: slice.primary.youtube_video_link.html }} />
       <div className="text-center tracking-tight text-darkgreen">
         <PrismicRichText field={slice.primary.caption} />
