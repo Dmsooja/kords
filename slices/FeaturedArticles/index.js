@@ -38,7 +38,7 @@ const FeaturedArticles = ({ slice }) => (
                           <div className="mt-3 text-base text-gray-500"><PrismicRichText field={item?.article_excerpt} /></div>
                         </PrismicLink>
                       </div>
-                      {/* <div className="mt-6 flex items-center">
+                      <div className="mt-6 flex items-center">
                         <div className="flex-shrink-0">
                           <PrismicLink field={item?.article_author_link}>
                             <span className="sr-only"><PrismicRichText field={item?.article_author_name} /></span>
@@ -57,7 +57,7 @@ const FeaturedArticles = ({ slice }) => (
                             <span>{item?.article_reading_time} min read</span>
                           </div>
                         </div>
-                      </div> */}
+                      </div>
                     </div>
                   </div>
                   :
@@ -78,18 +78,18 @@ const FeaturedArticles = ({ slice }) => (
                         </PrismicLink>
                       </div>
                       <div className="mt-6 flex items-center">
-                        {/* <div className="flex-shrink-0">
-                          <PrismicLink field={item?.linked_article?.data?.article_author_link}>
-                            <span className="sr-only"><PrismicRichText field={item?.linked_article?.data?.article_author_name} /></span>
-                            <img className="h-10 w-10 object-cover rounded-full" src={item?.linked_article?.data?.article_author_image?.url} alt={item?.linked_article?.data?.article_author_image?.alt} />
+                        <div className="flex-shrink-0">
+                          <PrismicLink field={item?.linked_article?.data?.author}>
+                            <span className="sr-only"><PrismicRichText field={item?.linked_article?.data?.author.data.name} /></span>
+                            <img className="h-10 w-10 object-cover rounded-full" src={item?.linked_article?.data?.author.data.image?.url} alt={item?.linked_article?.data?.author.data.image?.alt} />
                           </PrismicLink>
-                        </div> */}
+                        </div>
                         <div className="ml-3">
-                          {/* <div className="text-sm font-medium text-gray-900">
-                            <PrismicLink field={item?.linked_article?.data?.article_author_link} className="hover:underline">
-                              <PrismicRichText field={item?.linked_article?.data?.article_author_name} />
+                          <div className="text-sm font-medium text-gray-900">
+                            <PrismicLink field={item?.linked_article?.data?.author} className="hover:underline">
+                              <PrismicRichText field={item?.linked_article?.data?.author.data.name} />
                             </PrismicLink>
-                          </div> */}
+                          </div>
                           <div className="flex space-x-1 text-sm text-gray-500">
                             <time dateTime={item?.linked_article?.data?.article_publishing_date}>{new Date(item?.linked_article?.data?.article_update_timestamp).toLocaleDateString("en-US", dateOptions)}</time>
                             <span aria-hidden="true">&middot;</span>
