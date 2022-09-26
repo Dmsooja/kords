@@ -7,17 +7,14 @@ export const authorGraphQuery =`
 				image
 			}
 		}
-		article_title
-		uid
 		article_category
-		featured_image
 		article_excerpt
-		article_author_name
-		article_author_link
-		article_author_image
-		article_reading_time
 		article_publishing_date
+		article_reading_time
+		article_title
 		article_update_timestamp
+		featured_image
+		uid
 		slices
 	}
 }

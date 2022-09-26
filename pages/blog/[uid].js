@@ -84,7 +84,7 @@ export async function getStaticProps({ params, previewData, locale }) {
   const client = createClient({ previewData });
 
   // Query the page & author
-  const page = await client.getByUID("blog_article", params.uid, {"graphQuery": authorGraphQuery, lang: locale }).catch(e => {
+  const page = await client.getByUID("blog_article", params.uid, { "graphQuery": authorGraphQuery, lang: locale }).catch(e => {
     return null
   });
 
