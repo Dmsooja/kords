@@ -1,49 +1,11 @@
-import { PrismicLink, PrismicImage, SliceZone, PrismicRichText } from "@prismicio/react";
+import { SliceZone } from "@prismicio/react";
 import { Layout } from "../components/Layout";
-import { createClient, linkResolver } from '../prismicio';
+import { createClient } from '../prismicio';
 import { components } from '../slices/index';
 import { blogArticlesGraphQuery } from "../queries";
-import * as prismicH from "@prismicio/helpers";
-import { PrismicNextImage } from "@prismicio/next";
-
+import { ArticlesListCards } from "../components/Blog/ArticlesListCards";
 
 const __allComponents = { ...components }
-
-const ArticleCard = ({ article }) => {
-  return (
-    <div className="sm:flex sm:items-top">
-      <div className="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
-        <div className="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4 relative w-40 h-40">
-          <PrismicLink
-            document={article}
-            linkResolver={linkResolver}
-          >
-            {prismicH.isFilled.image(article?.data?.featured_image) && (
-              <PrismicNextImage
-                field={article.data.featured_image}
-                layout="fill"
-                className="rounded-md object-center object-cover"
-              />
-            )}
-          </PrismicLink>
-        </div>
-      </div>
-      <div>
-        <PrismicLink
-          document={article}
-          linkResolver={linkResolver}
-        >
-          <div className="text-lg font-bold">
-            <PrismicRichText field={article?.data?.article_title} />
-          </div>
-        </PrismicLink>
-        <div className="mt-1 text-gray-500">
-          <PrismicRichText field={article?.data?.article_excerpt} />
-        </div>
-      </div>
-    </div>
-  )
-}
 
 export default function Blog({ doc, menu, footer, articles }) {
   return (
@@ -65,7 +27,7 @@ export default function Blog({ doc, menu, footer, articles }) {
                   key={idx}
                   className="shadow max-w-7xl mt-10 mx-auto py-6 bg-white sm:px-6 sm:rounded-md"
                 >
-                  <ArticleCard article={article} />
+                  <ArticlesListCards article={article} />
                 </li>
               )
             })}

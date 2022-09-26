@@ -1,28 +1,3 @@
-export const authorArticlesGraphQuery =`
-{
-	author {
-		slices {
-			...on featured_articles {
-				variation {
-					...on withContentRelationship {
-						items {
-							linked_article {
-								...on blog_article {
-									...blog_articleFields
-								}
-							}
-						}
-						primary {
-							...primaryFields
-						}
-					}
-				}
-			}
-		}
-	}
-}
-`
-
 export const authorGraphQuery =`
 {
 	blog_article {
@@ -59,6 +34,12 @@ export const blogArticlesGraphQuery =`
 							linked_article {
 								...on blog_article {
 									...blog_articleFields
+									author {
+										...on author {
+											name
+											image
+										}
+									}
 								}
 							}
 						}
