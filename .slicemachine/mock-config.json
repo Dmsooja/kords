@@ -342,6 +342,18 @@
           }
         }
       }
+    },
+    "EmbedTypeform": {
+      "default": {
+        "primary": {
+          "typeform_embed": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
     }
   }
 }

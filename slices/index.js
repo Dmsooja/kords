@@ -2,6 +2,7 @@
 
 import Accordion from './Accordion';
 import CtaSection from './CtaSection';
+import EmbedTypeform from './EmbedTypeform';
 import FeaturedArticles from './FeaturedArticles';
 import FeaturedProducts from './FeaturedProducts';
 import HeaderBanner from './HeaderBanner';
@@ -17,6 +18,7 @@ import YoutubeVideo from './YoutubeVideo';
 export {
 	Accordion,
 	CtaSection,
+	EmbedTypeform,
 	FeaturedArticles,
 	FeaturedProducts,
 	HeaderBanner,
@@ -33,6 +35,7 @@ export {
 export const components = {
 	accordion: Accordion,
 	cta_section: CtaSection,
+	embed_typeform: EmbedTypeform,
 	featured_articles: FeaturedArticles,
 	featured_products: FeaturedProducts,
 	logo_cloud: HeaderBanner,

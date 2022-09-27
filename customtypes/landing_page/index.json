@@ -25,6 +25,12 @@
             },
             "reinsurance": {
               "type": "SharedSlice"
+            },
+            "youtube_video": {
+              "type": "SharedSlice"
+            },
+            "embed_typeform": {
+              "type": "SharedSlice"
             }
           }
         }
