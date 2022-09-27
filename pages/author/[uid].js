@@ -21,7 +21,7 @@ export default function Author({ doc, menu, footer, articles }) {
                     id="all-articles"
                     className="overflow-hidden px-4 py-4"
                 >
-                    {articles?.filter(article => article.data.author.id === doc.id)?.map((article, idx) => {
+                    {articles?.filter(article => article.data.author.uid === doc.uid)?.map((article, idx) => {
                         return (
                             <li
                                 key={idx}
