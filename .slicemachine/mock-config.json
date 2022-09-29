@@ -343,14 +343,11 @@
         }
       }
     },
-    "EmbedTypeform": {
+    "WufooForm": {
       "default": {
         "primary": {
-          "typeform_embed": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
+          "form_id": {
+            "content": "z1i7pvk4115cpwn"
           }
         }
       }

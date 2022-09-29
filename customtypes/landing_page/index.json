@@ -29,7 +29,7 @@
             "youtube_video": {
               "type": "SharedSlice"
             },
-            "embed_typeform": {
+            "wufoo_form": {
               "type": "SharedSlice"
             }
           }

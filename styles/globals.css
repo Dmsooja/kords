@@ -40,3 +40,11 @@ a {
   aspect-ratio: 16/9;
   height: 400px;
 }
+
+.email-field.focused {
+  background-color: unset !important;
+}
+
+.wufoo header#header.info {
+  display: non !important;
+}

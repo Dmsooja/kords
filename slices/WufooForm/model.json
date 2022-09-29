@@ -1,23 +1,21 @@
 {
-  "id": "embed_typeform",
+  "id": "wufoo_form",
   "type": "SharedSlice",
-  "name": "EmbedTypeform",
-  "description": "EmbedTypeform",
+  "name": "WufooForm",
+  "description": "WufooForm",
   "variations": [
     {
       "id": "default",
       "name": "Default",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "EmbedTypeform",
+      "description": "WufooForm",
       "primary": {
-        "typeform_embed": {
-          "type": "StructuredText",
+        "form_id": {
+          "type": "Text",
           "config": {
-            "label": "Typeform Embed",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "preformatted"
+            "label": "Form ID",
+            "placeholder": ""
           }
         }
       },

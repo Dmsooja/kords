@@ -237,70 +237,6 @@
           }
         }
       },
-      "embed_typeform": {
-        "library": "slices",
-        "id": "embed_typeform",
-        "name": "EmbedTypeform",
-        "description": "EmbedTypeform",
-        "model": {
-          "id": "embed_typeform",
-          "type": "SharedSlice",
-          "name": "EmbedTypeform",
-          "description": "EmbedTypeform",
-          "variations": [
-            {
-              "id": "default",
-              "name": "Default",
-              "docURL": "...",
-              "version": "sktwi1xtmkfgx8626",
-              "description": "EmbedTypeform",
-              "primary": {
-                "typeform_embed": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Typeform Embed",
-                    "placeholder": "",
-                    "allowTargetBlank": true,
-                    "multi": "preformatted"
-                  }
-                }
-              },
-              "items": {},
-              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-            }
-          ]
-        },
-        "mocks": {
-          "default": {
-            "variation": "default",
-            "version": "sktwi1xtmkfgx8626",
-            "items": [
-              {}
-            ],
-            "primary": {
-              "typeform_embed": [
-                {
-                  "type": "paragraph",
-                  "text": "Dolor aliqua aliquip non magna aute nostrud voluptate.",
-                  "spans": []
-                }
-              ]
-            },
-            "slice_type": "embed_typeform"
-          }
-        },
-        "meta": {
-          "fileName": "index",
-          "extension": "js"
-        },
-        "screenshotPaths": {
-          "default": {
-            "path": "/Users/dianka/Documents/Demos/kords/slices/EmbedTypeform/default/preview.png",
-            "width": 1254,
-            "height": 800
-          }
-        }
-      },
       "featured_articles": {
         "library": "slices",
         "id": "featured_articles",
@@ -1810,6 +1746,56 @@
             "height": 48
           }
         }
+      },
+      "wufoo_form": {
+        "library": "slices",
+        "id": "wufoo_form",
+        "name": "WufooForm",
+        "description": "WufooForm",
+        "model": {
+          "id": "wufoo_form",
+          "type": "SharedSlice",
+          "name": "WufooForm",
+          "description": "WufooForm",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "WufooForm",
+              "primary": {
+                "form_id": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Form ID",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "form_id": "z1i7pvk4115cpwn"
+            },
+            "slice_type": "wufoo_form"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
       },
       "youtube_video": {
         "library": "slices",
