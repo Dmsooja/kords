@@ -26,7 +26,8 @@
         }
       }
     },
-    "about": {}
+    "about": {},
+    "product_category": {}
   },
   "slices": {
     "HeroSectionCard": {
