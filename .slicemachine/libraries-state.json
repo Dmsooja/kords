@@ -1795,7 +1795,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/WufooForm/default/preview.png",
+            "width": 800,
+            "height": 500
+          }
+        }
       },
       "youtube_video": {
         "library": "slices",

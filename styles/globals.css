@@ -48,3 +48,10 @@ a {
 .wufoo header#header.info {
   display: non !important;
 }
+
+iframe[title="Embedded Wufoo Form"] .embed {
+  background-color: red;
+}
+header#header {
+  display: none;
+}

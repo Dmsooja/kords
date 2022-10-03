@@ -16,7 +16,7 @@
         "link_label": [
           {
             "type": "paragraph",
-            "text": "Amet sunt reprehenderit consequat.",
+            "text": "Enim magna laborum pariatur laboris labore fugiat id laboris nulla aliqua eu. Enim excepteur qui veniam. Fugiat ut commodo do voluptate sunt deserunt pariatur consectetur minim incididunt ullamco enim id ex.",
             "spans": []
           }
         ],
@@ -30,7 +30,7 @@
       {
         "social_link": {
           "link_type": "Web",
-          "url": "https://slicemachine.dev"
+          "url": "https://prismic.io"
         },
         "social_icon": {
           "dimensions": {
@@ -39,16 +39,17 @@
           },
           "alt": null,
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88"
+          "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
         }
       }
     ],
     "copyright": [
       {
         "type": "paragraph",
-        "text": "Non cillum ad do ad. Ad ut tempor nisi dolor occaecat nulla nisi exercitation. Ipsum cillum adipisicing mollit non elit.",
+        "text": "Occaecat esse tempor ipsum dolor sunt in amet. Occaecat nisi ullamco elit veniam et veniam nisi. Elit voluptate proident fugiat voluptate et amet sint amet nostrud deserunt Lorem esse aliquip.",
         "spans": []
       }
-    ]
+    ],
+    "slices": []
   }
 }

@@ -7,7 +7,7 @@ import { homeArticlesGraphQuery } from "../queries";
 
 const __allComponents = { ...components }
 
-export default function Home({ doc, menu, settings, footer }) {
+export default function Home({ doc, menu, footer }) {
   return (
     <div>
       <Layout altLangs={doc.alternate_languages} menu={menu} footer={footer}>
