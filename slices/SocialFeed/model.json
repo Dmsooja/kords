@@ -1,0 +1,50 @@
+{
+  "id": "social_feed",
+  "type": "SharedSlice",
+  "name": "SocialFeed",
+  "description": "SocialFeed",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "SocialFeed",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "social_link_label": {
+          "type": "Text",
+          "config": {
+            "label": "Social Link Label",
+            "placeholder": ""
+          }
+        },
+        "social_link_url": {
+          "type": "Link",
+          "config": {
+            "label": "Social Link Url",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "number_of_posts": {
+          "type": "Number",
+          "config": {
+            "label": "Number Of Posts",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

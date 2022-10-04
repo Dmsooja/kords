@@ -10,6 +10,7 @@ import Image from './Image';
 import Menu from './Menu';
 import Reinsurance from './Reinsurance';
 import ScrollingCards from './ScrollingCards';
+import SocialFeed from './SocialFeed';
 import Text from './Text';
 import TopPromotionBanner from './TopPromotionBanner';
 import WufooForm from './WufooForm';
@@ -26,6 +27,7 @@ export {
 	Menu,
 	Reinsurance,
 	ScrollingCards,
+	SocialFeed,
 	Text,
 	TopPromotionBanner,
 	WufooForm,
@@ -43,6 +45,7 @@ export const components = {
 	menu: Menu,
 	reinsurance: Reinsurance,
 	scrolling_cards: ScrollingCards,
+	social_feed: SocialFeed,
 	text: Text,
 	top_promotion_banner: TopPromotionBanner,
 	wufoo_form: WufooForm,

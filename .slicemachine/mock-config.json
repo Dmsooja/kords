@@ -352,6 +352,19 @@
           }
         }
       }
+    },
+    "SocialFeed": {
+      "default": {
+        "items": {},
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
     }
   }
 }

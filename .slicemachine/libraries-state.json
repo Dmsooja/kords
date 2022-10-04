@@ -1554,6 +1554,92 @@
           }
         }
       },
+      "social_feed": {
+        "library": "slices",
+        "id": "social_feed",
+        "name": "SocialFeed",
+        "description": "SocialFeed",
+        "model": {
+          "id": "social_feed",
+          "type": "SharedSlice",
+          "name": "SocialFeed",
+          "description": "SocialFeed",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "SocialFeed",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "social_link_label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Social Link Label",
+                    "placeholder": ""
+                  }
+                },
+                "social_link_url": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Social Link Url",
+                    "placeholder": "",
+                    "select": null
+                  }
+                },
+                "number_of_posts": {
+                  "type": "Number",
+                  "config": {
+                    "label": "Number Of Posts",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Accept",
+                  "spans": []
+                }
+              ],
+              "social_link_label": "eventually",
+              "social_link_url": {
+                "link_type": "Web",
+                "url": "https://slicemachine.dev"
+              },
+              "number_of_posts": 81
+            },
+            "slice_type": "social_feed"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "text": {
         "library": "slices",
         "id": "text",
