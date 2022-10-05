@@ -11,6 +11,27 @@
   "lang": "en-us",
   "alternate_languages": [],
   "data": {
-    "slices": []
+    "slices": [],
+    "meta_title": "heard",
+    "meta_description": "shown",
+    "canonicalLink": {
+      "link_type": "Web",
+      "url": "http://google.com"
+    },
+    "social_cards": [
+      {
+        "social_card_image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa"
+        },
+        "social_card_title": "year",
+        "social_card_description": "riding"
+      }
+    ]
   }
 }

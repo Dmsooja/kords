@@ -10,7 +10,7 @@ const SocialFeed = ({ slice }) => {
   const postCount = slice.primary.number_of_posts;
 
   const fetchImages = () => {
-    const flickrApi = `https://www.flickr.com/services/rest/?method=flickr.groups.pools.getPhotos&api_key=f929272a6239bdb54c3d66101055135c&group_id=85397716@N00&sort=relevance&per_page=${postCount}&format=json&nojsoncallback=1`;
+    const flickrApi = `https://www.flickr.com/services/rest/?method=flickr.groups.pools.getPhotos&api_key=f929272a6239bdb54c3d66101055135c&group_id=85397716@N00&sort=relevance&per_page=${postCount ? postCount : 5}&format=json&nojsoncallback=1`;
 
     const api = flickrApi;
 

@@ -37,6 +37,9 @@
             },
             "cta_section": {
               "type": "SharedSlice"
+            },
+            "social_feed": {
+              "type": "SharedSlice"
             }
           }
         }
