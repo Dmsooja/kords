@@ -82,6 +82,29 @@ export async function getStaticProps({ previewData, locale }) {
   )
 
 
+
+  //Query social media feed data
+  // let postCount = null;
+
+  // async function getNumberOfPosts() {
+  //   document?.data?.slices?.map(slice => {
+  //     if (slice.slice_type === "social_feed_ssg") {
+  //       postCount = slice.primary.number_of_posts;
+  //     }
+  //   })
+  // }
+
+  // await getNumberOfPosts
+  // console.log(postCount)
+
+  // const socialFeedData = axios.get(`https://www.flickr.com/services/rest/?method=flickr.groups.pools.getPhotos&api_key=f929272a6239bdb54c3d66101055135c&group_id=85397716@N00&sort=relevance&per_page=${postCount ? postCount : 5}&format=json&nojsoncallback=1`)
+  //   .then(res => {
+  //     socialFeedData = res.data.photos.photo;
+  //   })
+  //   .catch(error => {
+  //     console.log(error);
+  //   })
+
   return {
     props: {
       doc: docWithArticles,
