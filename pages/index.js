@@ -3,21 +3,22 @@ import { Layout } from "../components/Layout";
 import { createClient } from '../prismicio';
 import { components } from '../slices/index';
 import { homeArticlesGraphQuery } from "../queries";
-
+import axios from 'axios';
 
 const __allComponents = { ...components }
 
-export default function Home({ doc, menu, footer }) {
+export default function Home({ doc, menu, footer, socialFeedData }) {
   return (
     <div>
       <Layout altLangs={doc.alternate_languages} menu={menu} footer={footer}>
-        <SliceZone slices={doc.data.slices} components={__allComponents} />
+        <SliceZone slices={doc.data.slices} components={__allComponents} context={{ flickrData: socialFeedData }} />
       </Layout>
     </div>
   )
 }
 
 export async function getStaticProps({ previewData, locale }) {
+
   const client = createClient(previewData)
 
   const document = (await client.getSingle('homepage', { lang: locale }).catch(e => {
@@ -55,8 +56,6 @@ export async function getStaticProps({ previewData, locale }) {
     }
   }
 
-
-
   const menu = (await client.getSingle("menu_main", { lang: locale }).catch(e => {
     return null
   }));
@@ -66,12 +65,29 @@ export async function getStaticProps({ previewData, locale }) {
     return null
   }));
 
+  //Query social media feed data
+  // const postCount = slice.primary.number_of_posts;
+
+  const postCount = 10;
+
+  const socialFeedData = (await
+    axios.get(`https://www.flickr.com/services/rest/?method=flickr.groups.pools.getPhotos&api_key=f929272a6239bdb54c3d66101055135c&group_id=85397716@N00&sort=relevance&per_page=${postCount ? postCount : 5}&format=json&nojsoncallback=1`)
+      .then(res => {
+        // console.log(res)
+        return res.data.photos.photo;
+      })
+      .catch(error => {
+        console.log(error);
+      })
+  )
+
 
   return {
     props: {
       doc: docWithArticles,
-      menu: menu,
-      footer: footer,
+      menu,
+      footer,
+      socialFeedData,
     }, // will be passed to the page component as props
   }
 }

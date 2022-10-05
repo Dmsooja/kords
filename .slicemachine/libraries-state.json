@@ -1646,6 +1646,84 @@
           }
         }
       },
+      "social_feed_ssg": {
+        "library": "slices",
+        "id": "social_feed_ssg",
+        "name": "SocialFeedSsg",
+        "description": "SocialFeedSsg",
+        "model": {
+          "id": "social_feed_ssg",
+          "type": "SharedSlice",
+          "name": "SocialFeedSsg",
+          "description": "SocialFeedSsg",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "SocialFeedSsg",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading2,hyperlink"
+                  }
+                },
+                "social_link_label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Social Link Label",
+                    "placeholder": ""
+                  }
+                },
+                "social_link_url": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Social Link Url",
+                    "placeholder": "",
+                    "select": null
+                  }
+                },
+                "number_of_posts": {
+                  "type": "Number",
+                  "config": {
+                    "label": "Number Of Posts",
+                    "placeholder": "10"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {},
+            "slice_type": "social_feed_ssg"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/SocialFeedSsg/default/preview.png",
+            "width": 800,
+            "height": 528
+          }
+        }
+      },
       "text": {
         "library": "slices",
         "id": "text",

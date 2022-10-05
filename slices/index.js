@@ -11,6 +11,7 @@ import Menu from './Menu';
 import Reinsurance from './Reinsurance';
 import ScrollingCards from './ScrollingCards';
 import SocialFeed from './SocialFeed';
+import SocialFeedSsg from './SocialFeedSsg';
 import Text from './Text';
 import TopPromotionBanner from './TopPromotionBanner';
 import WufooForm from './WufooForm';
@@ -28,6 +29,7 @@ export {
 	Reinsurance,
 	ScrollingCards,
 	SocialFeed,
+	SocialFeedSsg,
 	Text,
 	TopPromotionBanner,
 	WufooForm,
@@ -46,6 +48,7 @@ export const components = {
 	reinsurance: Reinsurance,
 	scrolling_cards: ScrollingCards,
 	social_feed: SocialFeed,
+	social_feed_ssg: SocialFeedSsg,
 	text: Text,
 	top_promotion_banner: TopPromotionBanner,
 	wufoo_form: WufooForm,

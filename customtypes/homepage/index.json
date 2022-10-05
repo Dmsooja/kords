@@ -40,6 +40,9 @@
             },
             "social_feed": {
               "type": "SharedSlice"
+            },
+            "social_feed_ssg": {
+              "type": "SharedSlice"
             }
           }
         }
