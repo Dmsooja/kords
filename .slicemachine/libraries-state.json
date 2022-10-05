@@ -1578,7 +1578,7 @@
                     "label": "Title",
                     "placeholder": "",
                     "allowTargetBlank": true,
-                    "single": "heading2"
+                    "single": "heading2,hyperlink"
                   }
                 },
                 "social_link_label": {
@@ -1600,7 +1600,7 @@
                   "type": "Number",
                   "config": {
                     "label": "Number Of Posts",
-                    "placeholder": ""
+                    "placeholder": "10"
                   }
                 }
               },
@@ -1620,16 +1620,16 @@
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Accept",
+                  "text": "Health",
                   "spans": []
                 }
               ],
-              "social_link_label": "eventually",
+              "social_link_label": "agree",
               "social_link_url": {
                 "link_type": "Web",
-                "url": "https://slicemachine.dev"
+                "url": "http://twitter.com"
               },
-              "number_of_posts": 81
+              "number_of_posts": 20
             },
             "slice_type": "social_feed"
           }
@@ -1638,7 +1638,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/SocialFeed/default/preview.png",
+            "width": 800,
+            "height": 560
+          }
+        }
       },
       "text": {
         "library": "slices",
