@@ -1,14 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { PrismicRichText, PrismicLink } from '@prismicio/react';
-import axios from 'axios';
 
 
 const SocialFeedSsg = ({ slice, context }) => {
 
   const images = context.flickrData;
-
-  const postCount = slice.primary.number_of_posts;
-
 
   return (
     <section>

@@ -66,22 +66,30 @@ export async function getStaticProps({ previewData, locale }) {
   }));
 
   //Query social media feed data
-  // const postCount = slice.primary.number_of_posts;
 
-  const postCount = 10;
+  const socialFeedSlice = await (document?.data?.slices?.filter(slice => slice.slice_type === "social_feed_ssg"));
+  const postCount = socialFeedSlice[0]?.primary?.number_of_posts;
+  
+  
+  async function getSocialDataFeed(postCount) {
+      if (socialFeedSlice.length >= 1) {
+      const response = await axios.get(`https://www.flickr.com/services/rest/?method=flickr.groups.pools.getPhotos&api_key=f929272a6239bdb54c3d66101055135c&group_id=85397716@N00&sort=relevance&per_page=${postCount}&format=json&nojsoncallback=1`)
+        .then(res => {
+          return res.data.photos.photo;
+        })
+        .catch(error => {
+          console.log(error);
+        })
+      return response
+      
+    } else {
+      return null;
+    }
+  }
+  
+  const socialFeedData = await getSocialDataFeed(postCount);
 
-  const socialFeedData = (await
-    axios.get(`https://www.flickr.com/services/rest/?method=flickr.groups.pools.getPhotos&api_key=f929272a6239bdb54c3d66101055135c&group_id=85397716@N00&sort=relevance&per_page=${postCount ? postCount : 5}&format=json&nojsoncallback=1`)
-      .then(res => {
-        // console.log(res)
-        return res.data.photos.photo;
-      })
-      .catch(error => {
-        console.log(error);
-      })
-  )
-
-
+console.log(socialFeedData)
   return {
     props: {
       doc: docWithArticles,
