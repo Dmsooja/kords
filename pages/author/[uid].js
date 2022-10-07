@@ -44,7 +44,7 @@ export async function getStaticProps({ params, previewData, locale }) {
         return null;
     }));
 
-    const articles = await client.getAllByType("blog_article").catch(e => {
+    const articles = await client.getAllByType("blog_article", { lang: locale }).catch(e => {
         return null
     });
 
