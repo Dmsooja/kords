@@ -1,6 +1,6 @@
 import { PrismicLink } from '@prismicio/react';
 import { linkResolver } from '../../prismicio';
-
+import { createClient } from '../../prismicio';
 
 const LangIcon = ({ lang }) => {
   const code = lang.substring(3).toLowerCase()
@@ -16,6 +16,7 @@ export const LanguageSwitcher = ({ altLangs = [] }) => {
           <li key={altLang.lang}>
             <PrismicLink
               href={linkResolver(altLang)}
+              // href="#"
               locale={altLang.lang}
             >
               {/* {altLang.lang} */}
