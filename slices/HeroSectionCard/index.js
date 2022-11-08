@@ -24,10 +24,25 @@ const HeroSectionCard = ({ slice }) => (
               <PrismicRichText field={slice.primary.description} />
             </div>
             <div className="mx-auto mt-5 max-w-md sm:flex sm:justify-center md:mt-8">
-              {(slice.variation !== "heroSectionNoCta") ?
+              {(slice.variation == "default") ?
                 slice?.items?.map((item, idx) =>
                     <PrismicLink
                       field={item.button_link}
+                      key={idx}
+                      className={
+                        `mt-3 sm:mt-0 shadow sm:mx-3 flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm ${item.button_type === "primary" ? "text-indigo-700 bg-white hover:bg-indigo-50" : "text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70"} sm:px-8`}
+                    >
+                      <span>
+                        {item.button_text}
+                      </span>
+                    </PrismicLink>
+                )
+                : null
+              }
+              {(slice.variation == "withAnchor") ?
+                slice?.items?.map((item, idx) =>
+                    <PrismicLink
+                      href={`/#${item.target_anchor}`}
                       key={idx}
                       className={
                         `mt-3 sm:mt-0 shadow sm:mx-3 flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm ${item.button_type === "primary" ? "text-indigo-700 bg-white hover:bg-indigo-50" : "text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70"} sm:px-8`}

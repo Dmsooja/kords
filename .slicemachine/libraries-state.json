@@ -932,6 +932,79 @@
               },
               "items": {},
               "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "withAnchor",
+              "name": "With Anchor",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "HeroSectionCard",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "background_image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Background Image",
+                    "constraint": {
+                      "width": 1152,
+                      "height": 458
+                    },
+                    "thumbnails": [
+                      {
+                        "name": "medium",
+                        "width": 576,
+                        "height": 229
+                      }
+                    ]
+                  }
+                }
+              },
+              "items": {
+                "button_type": {
+                  "type": "Select",
+                  "config": {
+                    "label": "Button Type",
+                    "placeholder": "",
+                    "options": [
+                      "primary",
+                      "secondary"
+                    ],
+                    "default_value": "primary"
+                  }
+                },
+                "target_anchor": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Target Anchor",
+                    "placeholder": "Targeted Anchor ID"
+                  }
+                },
+                "button_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Button Text",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
           ]
         },
@@ -953,14 +1026,14 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Continent",
+                  "text": "Outer",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Magna exercitation sit veniam duis eu exercitation sunt cupidatat elit ex sit ullamco.",
+                  "text": "Ut cillum adipisicing id ex deserunt laborum non eu sint. Et nisi id cillum culpa minim nulla consequat deserunt aliqua consectetur.",
                   "spans": []
                 }
               ],
@@ -971,7 +1044,7 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+                "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43",
                 "medium": {
                   "dimensions": {
                     "width": 576,
@@ -979,7 +1052,7 @@
                   },
                   "alt": null,
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118"
+                  "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853"
                 }
               }
             },
@@ -995,14 +1068,14 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Claws",
+                  "text": "Hidden",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Culpa minim enim duis dolore cillum esse adipisicing quis aliqua reprehenderit non. Ullamco sint tempor eiusmod velit dolore. Irure Lorem occaecat ex culpa ullamco velit exercitation consectetur do est irure ea esse in.",
+                  "text": "Veniam ex excepteur proident do adipisicing amet amet enim eu dolor labore. Sint consectetur non duis occaecat aliqua exercitation minim adipisicing. Excepteur in sunt ullamco aute.",
                   "spans": []
                 }
               ],
@@ -1013,7 +1086,53 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9"
+                "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04"
+              }
+            },
+            "slice_type": "hero_section_card"
+          },
+          "withAnchor": {
+            "variation": "withAnchor",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "button_type": "primary",
+                "target_anchor": "deep",
+                "button_text": "mainly"
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Courage",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Ad id eiusmod enim mollit Lorem proident esse dolor nisi occaecat anim ex.",
+                  "spans": []
+                }
+              ],
+              "background_image": {
+                "dimensions": {
+                  "width": 1152,
+                  "height": 458
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118",
+                "medium": {
+                  "dimensions": {
+                    "width": 576,
+                    "height": 229
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055"
+                }
               }
             },
             "slice_type": "hero_section_card"
@@ -1027,12 +1146,17 @@
           "default": {
             "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/HeroSectionCard/default/preview.png",
             "width": 800,
-            "height": 438
+            "height": 402
           },
           "heroSectionNoCta": {
             "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/HeroSectionCard/heroSectionNoCta/preview.png",
             "width": 800,
-            "height": 360
+            "height": 324
+          },
+          "withAnchor": {
+            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/HeroSectionCard/withAnchor/preview.png",
+            "width": 800,
+            "height": 430
           }
         }
       },
@@ -1694,6 +1818,13 @@
                     "label": "Number Of Posts",
                     "placeholder": "10"
                   }
+                },
+                "anchor_id": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Anchor ID",
+                    "placeholder": ""
+                  }
                 }
               },
               "items": {},
@@ -1708,7 +1839,22 @@
             "items": [
               {}
             ],
-            "primary": {},
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Rhythm",
+                  "spans": []
+                }
+              ],
+              "social_link_label": "combination",
+              "social_link_url": {
+                "link_type": "Web",
+                "url": "https://prismic.io"
+              },
+              "number_of_posts": 39,
+              "anchor_id": "warn"
+            },
             "slice_type": "social_feed_ssg"
           }
         },

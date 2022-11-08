@@ -7,7 +7,7 @@ const SocialFeedSsg = ({ slice, context }) => {
   const images = context.flickrData;
 
   return (
-    <section>
+    <section id={ slice.primary.anchor_id }>
       <div className="bg-white">
         <div className="py-16 sm:py-24 xl:max-w-7xl xl:mx-auto xl:px-8">
           <div className="px-4 sm:px-6 sm:flex sm:items-center sm:justify-between lg:px-8 xl:px-0">

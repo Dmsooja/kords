@@ -41,6 +41,13 @@
             "label": "Number Of Posts",
             "placeholder": "10"
           }
+        },
+        "anchor_id": {
+          "type": "Text",
+          "config": {
+            "label": "Anchor ID",
+            "placeholder": ""
+          }
         }
       },
       "items": {},

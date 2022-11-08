@@ -117,6 +117,79 @@
       },
       "items": {},
       "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "withAnchor",
+      "name": "With Anchor",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "HeroSectionCard",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "A nice description of your feature",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "background_image": {
+          "type": "Image",
+          "config": {
+            "label": "Background Image",
+            "constraint": {
+              "width": 1152,
+              "height": 458
+            },
+            "thumbnails": [
+              {
+                "name": "medium",
+                "width": 576,
+                "height": 229
+              }
+            ]
+          }
+        }
+      },
+      "items": {
+        "button_type": {
+          "type": "Select",
+          "config": {
+            "label": "Button Type",
+            "placeholder": "",
+            "options": [
+              "primary",
+              "secondary"
+            ],
+            "default_value": "primary"
+          }
+        },
+        "target_anchor": {
+          "type": "Text",
+          "config": {
+            "label": "Target Anchor",
+            "placeholder": "Targeted Anchor ID"
+          }
+        },
+        "button_text": {
+          "type": "Text",
+          "config": {
+            "label": "Button Text",
+            "placeholder": ""
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
     }
   ]
 }
