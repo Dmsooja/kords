@@ -34,7 +34,7 @@ const Page = ({ menu, doc, footer }) => {
             </div>
           </div>
           {/* Author */}
-          <div className="md:flex md:items-center md:justify-between md:space-x-5 mb-6 px-6 sm:px-4 md:px-6 lg:px-8 relative bg-white py-2 px-6 sm:py-4 max-w-7xl mx-auto border-b border-neutral-200">
+          <div className="md:flex md:items-center md:justify-between md:space-x-5 mb-6 px-6 sm:px-4 md:px-6 lg:px-8 relative bg-white py-2 sm:py-4 max-w-7xl mx-auto border-b border-neutral-200">
             <div className="flex items-start space-x-5">
               <div className="flex-shrink-0">
                 <div className="relative">
