@@ -30,7 +30,7 @@ const HeroSectionCard = ({ slice }) => (
                       field={item.button_link}
                       key={idx}
                       className={
-                        `mt-3 sm:mt-0 shadow sm:mx-3 flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm ${item.button_type === "primary" ? "text-indigo-700 bg-white hover:bg-indigo-50" : "text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70"} sm:px-8`}
+                        `mt-3 sm:mt-0 shadow sm:mx-3 flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md ${item.button_type === "primary" ? "text-indigo-700 bg-white hover:bg-indigo-50" : "text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70"} sm:px-8`}
                     >
                       <span>
                         {item.button_text}
@@ -45,7 +45,7 @@ const HeroSectionCard = ({ slice }) => (
                       href={`/#${item.target_anchor}`}
                       key={idx}
                       className={
-                        `mt-3 sm:mt-0 shadow sm:mx-3 flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm ${item.button_type === "primary" ? "text-indigo-700 bg-white hover:bg-indigo-50" : "text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70"} sm:px-8`}
+                        `mt-3 sm:mt-0 shadow sm:mx-3 flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md ${item.button_type === "primary" ? "text-indigo-700 bg-white hover:bg-indigo-50" : "text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70"} sm:px-8`}
                     >
                       <span>
                         {item.button_text}
