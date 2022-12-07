@@ -28,7 +28,6 @@ const FeaturedProducts = ({ slice }) => {
                         {item.product.name}
                       </a>
                     </h3>
-                    {/* <p className="mt-1 text-sm text-gray-500">{item.product.color}</p> */}
                   </div>
                   <p className="text-sm font-medium text-gray-900">{item.product.price}</p>
                 </div>
