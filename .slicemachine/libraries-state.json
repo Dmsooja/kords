@@ -553,9 +553,14 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/dianka/Documents/Demos/kords/.slicemachine/assets/slices/FeaturedArticles/default/preview.png",
-            "width": 800,
-            "height": 1728
+            "path": "/Users/dianka/Documents/Demos/kords/slices/FeaturedArticles/default/preview.png",
+            "width": 1287,
+            "height": 856
+          },
+          "withContentRelationship": {
+            "path": "/Users/dianka/Documents/Demos/kords/slices/FeaturedArticles/withContentRelationship/preview.png",
+            "width": 1287,
+            "height": 856
           }
         }
       },
