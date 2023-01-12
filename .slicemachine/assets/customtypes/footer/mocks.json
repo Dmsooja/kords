@@ -1,55 +1,121 @@
 {
-  "id": "mock-doc-id",
-  "url": null,
-  "type": "footer",
-  "href": null,
-  "tags": [],
-  "first_publication_date": "1970-01-01T00:00:01+0000",
-  "last_publication_date": "1970-01-01T00:00:01+0000",
-  "slugs": [],
-  "linked_documents": [],
-  "lang": "en-us",
-  "alternate_languages": [],
-  "data": {
-    "internalLinks": [
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "loud"
+  },
+  "internalLinks": {
+    "__TYPE__": "GroupContentType",
+    "value": [
       {
-        "link_label": [
-          {
-            "type": "paragraph",
-            "text": "Enim magna laborum pariatur laboris labore fugiat id laboris nulla aliqua eu. Enim excepteur qui veniam. Fugiat ut commodo do voluptate sunt deserunt pariatur consectetur minim incididunt ullamco enim id ex.",
-            "spans": []
-          }
-        ],
-        "link": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
-        }
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "link_label",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Veniam irure in Lorem do Lorem non nulla proident ad."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "link",
+            {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "http://google.com"
+              }
+            }
+          ]
+        ]
       }
-    ],
-    "social_links": [
+    ]
+  },
+  "social_links": {
+    "__TYPE__": "GroupContentType",
+    "value": [
       {
-        "social_link": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
-        },
-        "social_icon": {
-          "dimensions": {
-            "width": 24,
-            "height": 24
-          },
-          "alt": null,
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
-        }
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "social_link",
+            {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "https://prismic.io"
+              }
+            }
+          ],
+          [
+            "social_icon",
+            {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51",
+                "width": 2545,
+                "height": 2545
+              },
+              "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?rect=0%2C0%2C2545%2C2545&w=24&h=24",
+              "width": 24,
+              "height": 24,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            }
+          ]
+        ]
       }
-    ],
-    "copyright": [
+    ]
+  },
+  "copyright": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
       {
         "type": "paragraph",
-        "text": "Occaecat esse tempor ipsum dolor sunt in amet. Occaecat nisi ullamco elit veniam et veniam nisi. Elit voluptate proident fugiat voluptate et amet sint amet nostrud deserunt Lorem esse aliquip.",
-        "spans": []
+        "content": {
+          "text": "Occaecat occaecat velit fugiat. Voluptate tempor irure irure elit nostrud eu consectetur exercitation officia. Sint ex amet consectetur laboris minim Lorem sint aliquip elit eiusmod."
+        }
       }
-    ],
-    "slices": []
+    ]
+  },
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "wufoo_form$913783b7-1211-4f63-8a0c-bf8b8dd917c3",
+        "name": "wufoo_form",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "form_id": {
+              "__TYPE__": "FieldContent",
+              "value": "came",
+              "type": "Text"
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      }
+    ]
   }
 }

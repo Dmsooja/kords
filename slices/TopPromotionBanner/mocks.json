@@ -1,0 +1,65 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "message": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Nisi irure cupidatat cillum elit commodo mollit dolore amet nisi labore occaecat incididunt veniam. Officia cillum exercitation consectetur."
+            }
+          }
+        ]
+      },
+      "mobile_message": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Nisi laborum minim occaecat culpa eu aute aute do consequat ea ipsum. Sint voluptate voluptate reprehenderit sunt aute laborum excepteur nostrud officia ut."
+            }
+          }
+        ]
+      },
+      "link": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "http://google.com"
+        }
+      },
+      "cta": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Fugiat nostrud voluptate nulla culpa deserunt amet officia sunt deserunt labore."
+            }
+          }
+        ]
+      },
+      "close_button_label": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Nisi ullamco ut reprehenderit quis duis eu anim aute. Esse sunt pariatur dolore consequat voluptate ipsum Lorem cupidatat mollit sunt ullamco duis dolore deserunt sint."
+            }
+          }
+        ]
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  }
+]

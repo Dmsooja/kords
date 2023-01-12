@@ -1,0 +1,259 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading1",
+            "content": {
+              "text": "Source"
+            }
+          }
+        ]
+      },
+      "description": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Excepteur eu culpa qui cupidatat in aliquip minim fugiat consectetur labore eiusmod nisi officia. Enim tempor proident in aliqua aute mollit reprehenderit aliqua ullamco commodo labore exercitation quis."
+            }
+          }
+        ]
+      },
+      "background_image": {
+        "__TYPE__": "ImageContent",
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764",
+          "width": 4172,
+          "height": 4000
+        },
+        "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?rect=0%2C1171%2C4172%2C1659&w=1152&h=458",
+        "width": 1152,
+        "height": 458,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 1171
+          },
+          "background": "transparent"
+        },
+        "thumbnails": {
+          "medium": {
+            "origin": {
+              "id": "medium",
+              "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764",
+              "width": 4172,
+              "height": 4000
+            },
+            "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?rect=0%2C1171%2C4172%2C1659&w=576&h=229",
+            "width": 576,
+            "height": 229,
+            "edit": {
+              "zoom": 1,
+              "crop": {
+                "x": 0,
+                "y": 1171
+              },
+              "background": "transparent"
+            }
+          }
+        }
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "button_type",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "primary",
+              "type": "Select"
+            }
+          ],
+          [
+            "button_link",
+            {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "https://prismic.io"
+              }
+            }
+          ],
+          [
+            "button_text",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "Click here",
+              "type": "Text"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "heroSectionNoCta",
+    "primary": {
+      "title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading1",
+            "content": {
+              "text": "Discover"
+            }
+          }
+        ]
+      },
+      "description": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Ex anim ea esse nostrud ipsum eu ex voluptate velit. Eu ea laboris proident et consequat laboris laborum. Minim est dolor sunt eu ex."
+            }
+          }
+        ]
+      },
+      "background_image": {
+        "__TYPE__": "ImageContent",
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+          "width": 5243,
+          "height": 3495
+        },
+        "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?rect=0%2C705%2C5243%2C2084&w=1152&h=458",
+        "width": 1152,
+        "height": 458,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 705
+          },
+          "background": "transparent"
+        },
+        "thumbnails": {}
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  },
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "withAnchor",
+    "primary": {
+      "title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading1",
+            "content": {
+              "text": "College"
+            }
+          }
+        ]
+      },
+      "description": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Eu aliquip culpa velit officia ex. Do amet ex deserunt irure ad consequat adipisicing aliquip duis. Nisi aute laborum mollit."
+            }
+          }
+        ]
+      },
+      "background_image": {
+        "__TYPE__": "ImageContent",
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+          "width": 4076,
+          "height": 2712
+        },
+        "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?rect=0%2C546%2C4076%2C1620&w=1152&h=458",
+        "width": 1152,
+        "height": 458,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 546
+          },
+          "background": "transparent"
+        },
+        "thumbnails": {
+          "medium": {
+            "origin": {
+              "id": "medium",
+              "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+              "width": 5848,
+              "height": 3899
+            },
+            "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?rect=0%2C787%2C5848%2C2325&w=576&h=229",
+            "width": 576,
+            "height": 229,
+            "edit": {
+              "zoom": 1,
+              "crop": {
+                "x": 0,
+                "y": 787
+              },
+              "background": "transparent"
+            }
+          }
+        }
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "button_type",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "primary",
+              "type": "Select"
+            }
+          ],
+          [
+            "target_anchor",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "night",
+              "type": "Text"
+            }
+          ],
+          [
+            "button_text",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "high",
+              "type": "Text"
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]
