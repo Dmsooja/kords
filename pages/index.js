@@ -73,7 +73,7 @@ export async function getStaticProps({ previewData, locale }) {
   
   async function getSocialDataFeed(postCount) {
       if (socialFeedSlice.length >= 1) {
-      const response = await axios.get(`https://www.flickr.com/services/rest/?method=flickr.groups.pools.getPhotos&api_key=f929272a6239bdb54c3d66101055135c&group_id=85397716@N00&sort=relevance&per_page=${postCount}&format=json&nojsoncallback=1`)
+      const response = await axios.get(`https://www.flickr.com/services/rest/?method=flickr.groups.pools.getPhotos&api_key=f929272a6239bdb54c3d66101055135c&group_id=14808571@N24&sort=relevance&per_page=${postCount}&format=json&nojsoncallback=1`)
         .then(res => {
           return res.data.photos.photo;
         })
